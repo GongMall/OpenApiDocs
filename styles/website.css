@@ -16,3 +16,11 @@ ul.summary li:first-child,
 ul.summary .divider:first-child{
 	display: none
 }
+.book-header .pull-right{
+	display: none
+}
+.book-header .pull-right.dropdown,
+.book-header .pull-right.lang-switcher
+{
+	display: none
+}
