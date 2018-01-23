@@ -22,5 +22,5 @@ ul.summary .divider:first-child{
 .book-header .pull-right.dropdown,
 .book-header .pull-right.lang-switcher
 {
-	display: none
+	display:block
 }
