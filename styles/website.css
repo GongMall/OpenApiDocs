@@ -12,6 +12,7 @@ cite{
 small{
 	font-size:10px;
 }
-/* ul.summary li:first-child{
+ul.summary li:first-child,
+ul.summary .divider:first-child{
 	display: none
-} */
+}
