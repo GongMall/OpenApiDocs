@@ -7,10 +7,10 @@ Methods allow you to smoothly display code examples in different languages.
 
 My first method exposes how to print a message in JavaScript and Go.
 
-{% sample lang="js" %}
+{% sample lang="java" %}
 Here is how to print a message to `stdout` using JavaScript.
 
-```js
+```java
 public class SignUtil {
 public static final String APPKEY = "appKey";
 public static final String APPSECRET = "appSecret";
