@@ -4,13 +4,13 @@
         "theme-api": {
             "languages": [
                 {
-                    "lang": "js",
-                    "name": "JavaScript",
+                    "lang": "java",
+                    "name": "Java",
                     "default": true
                 },
                 {
-                    "lang": "go",
-                    "name": "Go"
+                    "lang": "c#",
+                    "name": "C#"
                 }
             ]
         }
