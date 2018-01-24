@@ -45,8 +45,7 @@ stringA="appKey=gmd930ea5d5a258f4f&nonce=76e71d31590d44f2aaa55fed6b3e267c&proces
 stringSignTemp="stringA&appSecret=192006250b4c09247ec02edce69f6a2d"
 sign=MD5(stringSignTemp).toUpperCase()="93E1D6AF003B1061DF01CEB93523F142"
 
-{% method %}
-## xxx
+
  输出参数:
 
 |参数名|类型|描述|
@@ -56,11 +55,13 @@ sign=MD5(stringSignTemp).toUpperCase()="93E1D6AF003B1061DF01CEB93523F142"
 |errorMsg  |string | 返回错误消息(success为true时为空)    |
 |data     |Object |  返回数据(success为false时为空)    |
 
+{% method %}
+## 开始
 
-{% sample lang="Java" %}
+{% sample lang="java" %}
 签名代码示例(JAVA)：
 
-```Java
+```java
 public class SignUtil {
     	public static final String APPKEY = "appKey";
     	public static final String APPSECRET = "appSecret";
@@ -118,11 +119,11 @@ public class SignUtil {
     }
 ```
 
-{% sample lang="C#" %}
+{% sample lang="csharp" %}
 签名代码示例(C#)：
 
 
-```C#
+```csharp
 cccc
 public class SignUtil {
     	public static final String APPKEY = "appKey";
