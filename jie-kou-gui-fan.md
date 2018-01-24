@@ -113,10 +113,10 @@ return map;
 }
 ```
 
-{% sample lang="java" %}
-签名代码示例(JAVA)：
+{% sample lang="c#" %}
+签名代码示例(C#)：
 
-```java
+```c#
 public class SignUtil {
 public static final String APPKEY = "appKey";
 public static final String APPSECRET = "appSecret";
