@@ -1,5 +1,4 @@
-*
-*接口规范：**
+** 接口规范：**
 支持http协议通讯，全部使用post方式，utf-8编码，请求参数为queryString方式，返回值为json格式
 
 
@@ -25,12 +24,10 @@
 |timestamp |是 |string | 当前毫秒时间戳| |
 |sign |是 |string | 签名 |见备注|
 
-
-- 备注：
-
 {% method %}
-## 签名生成的通用步骤如下：
+## My first method
 
+签名生成的通用步骤如下：
 第一步，设所有发送或者接收到的数据为集合M，将集合M内非空参数值的参数按照参数名ASCII码从小到大排序（字典序），使用URL键值对的格式（即key1=value1&key2=value2…）拼接成字符串stringA。
 第二步，在stringA最后拼接上appSecret得到stringSignTemp字符串，并对stringSignTemp进行MD5运算，再将得到的字符串所有字符转换为大写，得到sign值signValue。
 
@@ -57,118 +54,24 @@ sign=MD5(stringSignTemp).toUpperCase()="93E1D6AF003B1061DF01CEB93523F142"
 |errorMsg |string | 返回错误消息(success为true时为空) |
 |data |Object | 返回数据(success为false时为空) |
 
-{% sample lang="java" %}
-签名代码示例(JAVA)：
+{% sample lang="js" %}
+Here is how to print a message to `stdout` using JavaScript.
 
-```java
-public class SignUtil {
-public static final String APPKEY = "appKey";
-public static final String APPSECRET = "appSecret";
-public static final String NONCE = "nonce";
-public static final String TIMESTAMP = "timestamp";
-public static final String SIGN = "sign";
-/**
-* 获取签名
-* @param paramMap 包含业务参数，和appKey,nonce,timestamp这3个公共参数
-* @param appSecret
-* @return
-*/
-public static String getSign(Map<String, Object> paramMap, String appSecret) {
-String text = getUrlText(paramMap);
-text += "&appSecret=" + appSecret;
-return MD5SHA256Util.md5(text).toUpperCase();
-}
-private static String getUrlText(Map<String, Object> beanMap) {
-beanMap = getSortedMap(beanMap);
-StringBuilder builder = new StringBuilder();
-for (String key : beanMap.keySet()) {
-String value = beanMap.get(key).toString();
-builder.append(key);
-builder.append('=');
-builder.append(value);
-builder.append('&');
-}
-String text = builder.toString();
-return text.substring(0, text.length() - 1);
-}
-/**
-* 对普通map进行排序
-* @param paramMap
-* @return
-*/
-private static Map<String, Object> getSortedMap(Map<String, Object> paramMap) {
-SortedMap<String, Object> map = new TreeMap<String, Object>();
-for (String key : paramMap.keySet()) {
-if (key != null && !APPSECRET.equals(key)) {
-Object value = paramMap.get(key);
-if (value != null) {
-String valueStr = String.valueOf(value);
-if (valueStr != null && !"".equals(valueStr)) {
-map.put(key, value);
-}
-}
-}
-}
-return map;
-}
-}
+```js
+console.log('My first method');
 ```
 
-{% sample lang="c#" %}
-签名代码示例(C#)：
+{% sample lang="go" %}
+Here is how to print a message to `stdout` using Go.
 
-```c#
-cccc
-public class SignUtil {
-public static final String APPKEY = "appKey";
-public static final String APPSECRET = "appSecret";
-public static final String NONCE = "nonce";
-public static final String TIMESTAMP = "timestamp";
-public static final String SIGN = "sign";
-/**
-* 获取签名
-* @param paramMap 包含业务参数，和appKey,nonce,timestamp这3个公共参数
-* @param appSecret
-* @return
-*/
-public static String getSign(Map<String, Object> paramMap, String appSecret) {
-String text = getUrlText(paramMap);
-text += "&appSecret=" + appSecret;
-return MD5SHA256Util.md5(text).toUpperCase();
-}
-private static String getUrlText(Map<String, Object> beanMap) {
-beanMap = getSortedMap(beanMap);
-StringBuilder builder = new StringBuilder();
-for (String key : beanMap.keySet()) {
-String value = beanMap.get(key).toString();
-builder.append(key);
-builder.append('=');
-builder.append(value);
-builder.append('&');
-}
-String text = builder.toString();
-return text.substring(0, text.length() - 1);
-}
-/**
-* 对普通map进行排序
-* @param paramMap
-* @return
-*/
-private static Map<String, Object> getSortedMap(Map<String, Object> paramMap) {
-SortedMap<String, Object> map = new TreeMap<String, Object>();
-for (String key : paramMap.keySet()) {
-if (key != null && !APPSECRET.equals(key)) {
-Object value = paramMap.get(key);
-if (value != null) {
-String valueStr = String.valueOf(value);
-if (valueStr != null && !"".equals(valueStr)) {
-map.put(key, value);
-}
-}
-}
-}
-return map;
-}
-}
+```go
+fmt.Println("My first method")
 ```
 
+{% common %}
+Whatever language you are using, the result will be the same.
+
+```bash
+$ My first method
+```
+{% endmethod %}
