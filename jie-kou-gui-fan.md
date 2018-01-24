@@ -8,7 +8,7 @@
 测试环境：`http://openapi-qa.gongmall.com `
   
 **请求方式：**
-- POST 
+- POST  
 
 **调用规则：**
 - 请求过期时间：5分钟
