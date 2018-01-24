@@ -1,6 +1,13 @@
-# 文档啊
+**准备工作：** 
+申请使用工猫提现功能时，企业开发人员需发送开发者信息至工猫总部邮箱support@gongmall.com
+开发者信息包括
+- 企业名称
+- 开发者姓名
+- 联系电话
+- 提现结果回调地址
+- 电子合同回调地址
+- ip地址白名单列表（一个或多个）
 
-This file file serves as your book's preface
-
-, a great place to describe your book's content and ideas.
-
+总部开通后，会回复邮件，告知企业开发者信息，包括
+- appKey
+- appSecret
