@@ -64,10 +64,10 @@ return map;
 }
 ```
 
-{% sample lang="go" %}
+{% sample lang="c#" %}
 Here is how to print a message to `stdout` using Go.
 
-```go
+```c#
 fmt.Println("My first method")
 ```
 
