@@ -19,5 +19,5 @@
 * [修改员工银行卡](shi-shi-ti-xian/xiu-gai-yin-hang-ka.md)
 * [提现](shi-shi-ti-xian/ti-xian.md)
 * [查询提现结果](shi-shi-ti-xian/cha-xun-ti-xian-jie-guo.md)
-* [回调-提现结果](shi-shi-ti-xian/ti-xian-jie-guo-hui-diao.md)
+* [回调提现结果](shi-shi-ti-xian/ti-xian-jie-guo-hui-diao.md)
 
