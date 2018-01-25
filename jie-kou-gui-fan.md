@@ -24,7 +24,7 @@
 |sign |是 |string | 签名 |见备注|
 
 {% method %}
-签名生成的通用步骤如下：
+### 签名生成的通用步骤如下：
 第一步，设所有发送或者接收到的数据为集合M，将集合M内非空参数值的参数按照参数名ASCII码从小到大排序（字典序），使用URL键值对的格式（即key1=value1&key2=value2…）拼接成字符串stringA。
 第二步，在stringA最后拼接上appSecret得到stringSignTemp字符串，并对stringSignTemp进行MD5运算，再将得到的字符串所有字符转换为大写，得到sign值signValue。
 
@@ -51,7 +51,7 @@ sign=MD5(stringSignTemp).toUpperCase()="93E1D6AF003B1061DF01CEB93523F142"
 |data |Object | 返回数据(success为false时为空) |
 
 {% sample lang="java" %}
-签名代码示例(JAVA)：
+** 签名代码示例(JAVA)：**
 
 ```java
 public class SignUtil {
@@ -106,5 +106,5 @@ public class SignUtil {
     }
 }
 ```
-
+{% endmethod %}
 

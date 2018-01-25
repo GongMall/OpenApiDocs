@@ -9,8 +9,7 @@
 
 ## 电签合同
 
-* [Defining Methods](methods.md)
-* [open](open.md)
+* [接入指南](open.md)
 
 ## 实时提现
 
