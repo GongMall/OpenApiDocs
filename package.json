@@ -1,0 +1,22 @@
+{
+  "name": "gitbook-build",
+  "version": "1.0.0",
+  "description": "gitbook build",
+  "author": "Alexi <x1160@126.com>",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "gitbook": "^3.2.3",
+    "gitbook-api": "^3.0.2",
+    "gitbook-cli": "^2.3.2"
+  },
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
