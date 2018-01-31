@@ -16,7 +16,6 @@
 ## 实时提现
 
 * [查询企业余额](shi-shi-ti-xian/cha-xun-qi-ye-yu-e.md)
-* [查询员工合同状态](shi-shi-ti-xian/cha-xun-yuan-gong-he-tong-zhuang-tai.md)
 * [修改员工银行卡](shi-shi-ti-xian/xiu-gai-yin-hang-ka.md)
 * [提现](shi-shi-ti-xian/ti-xian.md)
 * [查询提现结果](shi-shi-ti-xian/cha-xun-ti-xian-jie-guo.md)
