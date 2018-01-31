@@ -1,0 +1,9 @@
+工猫文档 github库：https://github.com/GongMall/OpenApiDocs
+https://github.com/GongMall/OpenApiDocs.git
+私有化部署步骤
+1 安装GITBOOK服务客户端[！全局！]
+npm install gitbook-cli -g
+2 安装插件
+gitbook install
+3 生成文档 _book 文件夹
+gitbook build

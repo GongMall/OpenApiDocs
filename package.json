@@ -1,14 +1,12 @@
 {
-  "name": "gitbook-build",
+  "name": "gongmall-book",
   "version": "1.0.0",
-  "description": "gitbook build",
-  "author": "Alexi <x1160@126.com>",
+  "description": "gongmall-book",
+  "author": "ale(x1160@126.com)",
   "private": true,
-  "dependencies": {},
-  "devDependencies": {
-    "gitbook": "^3.2.3",
-    "gitbook-api": "^3.0.2",
-    "gitbook-cli": "^2.3.2"
+  "dependencies": {
+  },
+  "devDependencies": {    
   },
   "engines": {
     "node": ">= 4.0.0",
