@@ -7,4 +7,4 @@ npm install gitbook-cli -g
 gitbook install
 3 生成文档 _book 文件夹
 gitbook build
-4 nginx 指向 _book目录就可以使用了
+4 nginx 指向 _book目录 配置域名即可
