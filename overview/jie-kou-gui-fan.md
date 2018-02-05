@@ -3,8 +3,8 @@
 支持http协议通讯，全部使用post方式，utf-8编码，请求参数为queryString方式，返回值为json格式
 
 ### 接口网关：
-正式环境：`http://openapi.gongmall.com `
-测试环境：`http://openapi-qa.gongmall.com `
+正式环境：`https://openapi.gongmall.com `
+测试环境：`https://openapi-qa.gongmall.com `
 **请求方式：**
 - POST
 
