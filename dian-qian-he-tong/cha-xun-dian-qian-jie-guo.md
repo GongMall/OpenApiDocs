@@ -5,7 +5,7 @@
 - 员工电签状态查询
 
 **请求URL：** 
-- /api/employee/getContractStatus `
+- /api/employee/getContractStatus
   
 **请求方式：**
 - POST 
