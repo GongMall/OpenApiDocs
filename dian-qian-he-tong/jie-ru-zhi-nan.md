@@ -32,6 +32,10 @@
 | idNumber| 是 | string | 证件号 |
 | bankNum| 是 | string | 银行卡号 |
 | bankName| 否 | string | 银行名称 |
+| workNumber| 否 | string | 工号，可作为用户唯一标识 |
+| extraParam| 否 | string | 附言参数，由传入方提供，回调时将原样返还，可以用来做用户数据标识。数据量大时建议使用jsonString格式传输 |
+
+
 
 {% method %}
 **请求地址示例：** 
