@@ -1,6 +1,6 @@
 ### 接口规范：
 ---
-支持http协议通讯，全部使用post方式，utf-8编码，请求参数为queryString方式，返回值为json格式
+支持https协议通讯，全部使用post方式，utf-8编码，请求参数为queryString方式，返回值为json格式
 
 ### 接口网关：
 正式环境：`https://openapi.gongmall.com `
