@@ -38,7 +38,7 @@
 
 
 {% method %}
-**请求地址示例：** 
+**请求示例：** 
 
 - 加密前
 https://contract-qa.gongmall.com/url_contract.html?companyId=xMEQMG&name=王星星&mobile=15212345678&idNumber=620402198709215456&bankName=招商银行&bankNum=6214830100799652
@@ -49,6 +49,12 @@ https://contract-qa.gongmall.com/url_contract.html?companyId=xMEQMG&data=lbrMBX7
 - 备注
 https://contract-qa.gongmall.com/url_contract.html?companyId=xMEQMG
 是我们根据系统生成的公司的唯一请求地址，后面的参数信息需要调用方按名称传给我们，用于生成合同和提现匹配。&之后的参数根据appkey+appSecret组合MD5大写作为秘钥，采用AES加密算法(算法中初始化向量IV采用16位的0)，最后将加密后的字符串作为data的值拼接在url请求到工猫，加密算法请参照不同语言示例
+
+### 测试数据：
+[1]appkey+appsecret:  799ae002c7e940ef8a890b3a428f8f458e3f7c39d1cc2bf24390f0c46cf932c8    
+[2]md5(32位): 61CC5DF78D360167F8618237DAF643EA      
+[3]待加密内容:  name=王星星&mobile=15212345678&idNumber=620402198709215456&bankName=招商银行&bankNum=6214830100799652 
+[4]加密结果： 8LZZEXRhAfeeQOxF1iI9GpBcA2hSCelrUq2OimhSgZly6RfRonzGiE32vHh/JkdK+X5N5hFBMKz+iOmWAbgL9BIu2GIAxBIXCOusxFU4eDJ/5uy7F9vR9EE5NqOAiHBZhTP3pzMtEc0fLAzg8Tsngg==
 
 {% sample lang="java" %}
 ** AES加密算法示例(JAVA)：**
