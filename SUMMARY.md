@@ -6,6 +6,7 @@
 * [接口规范](overview/jie-kou-gui-fan.md)
 * [异常代码](overview/yi-chang-dai-ma.md)
 * [业务代码](overview/ye-wu-dai-ma.md)
+* [提现历史记录](ti-xian-li-shi-ji-lu.md)
 
 ## 电签合同
 
