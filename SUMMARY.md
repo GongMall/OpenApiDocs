@@ -6,7 +6,6 @@
 * [接口规范](overview/jie-kou-gui-fan.md)
 * [异常代码](overview/yi-chang-dai-ma.md)
 * [业务代码](overview/ye-wu-dai-ma.md)
-* [提现历史记录](ti-xian-li-shi-ji-lu.md)
 
 ## 电签合同
 
@@ -22,6 +21,7 @@
 * [查询企业余额](shi-shi-ti-xian/cha-xun-qi-ye-yu-e.md)
 * [修改员工银行卡](shi-shi-ti-xian/xiu-gai-yin-hang-ka.md)
 * [提现](shi-shi-ti-xian/ti-xian.md)
+* [提现历史记录](ti-xian-li-shi-ji-lu.md)
 * [查询提现结果](shi-shi-ti-xian/cha-xun-ti-xian-jie-guo.md)
 * [回调提现结果](shi-shi-ti-xian/ti-xian-jie-guo-hui-diao.md)
 
