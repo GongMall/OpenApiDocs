@@ -11,7 +11,7 @@
 
 **请求URL：**
 
-* [https://openApi-qa.gongmall.com](https://legacy.gitbook.com/book/gongmall/apidoc/edit#)/api/withdraw/getWithdrawResult
+* https://openApi-qa.gongmall.com/api/withdraw/getWithdrawResult
 
 **请求方式：**
 
