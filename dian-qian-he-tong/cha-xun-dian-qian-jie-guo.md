@@ -1,39 +1,46 @@
 ### 查询电签结果
+
 ---
-**简要描述：** 
 
-- 员工电签状态查询
+**简要描述：**
 
-**请求URL：** 
-- /api/employee/getContractStatus
-  
+* 员工电签状态查询
+
+**请求URL：**
+
+* https://contract-qa.gongmall.com/api/employee/getContractStatus
+
 **请求方式：**
-- POST 
 
-**参数：** 
+* POST 
 
-|参数名|必选|类型|说明|
-|:----    |:---|:----- |-----   |
-|mobile |是  |string |手机号   |
-|name |是  |string | 姓名    |
-|identity     |是  |string | 身份证号    |
+**参数：**
 
+| 参数名 | 必选 | 类型 | 说明 |
+| :--- | :--- | :--- | --- |
+| mobile | 是 | string | 手机号 |
+| name | 是 | string | 姓名 |
+| identity | 是 | string | 身份证号 |
 
- **返回参数说明** 
+**返回参数说明**
 
-|参数名|类型|说明|
-|:-----  |:-----|-----                           |
-|success |boolean   |请求结果，true：成功；false：失败  |
-|errorCode |string   |错误码  |
-|errorMsg |string   |失败原因  |
+| 参数名 | 类型 | 说明 |
+| :--- | :--- | --- |
+| success | boolean | 请求结果，true：成功；false：失败 |
+| errorCode | string | 错误码 |
+| errorMsg | string | 失败原因 |
 
- **返回示例**
+**返回示例**
 
-``` 
+```
  {
-	“success”：true
+    “success”：true
  }
 ```
- **备注** 
 
-- 更多返回错误代码请看首页的异常码描述
+**备注**
+
+* 更多返回错误代码请看首页的异常码描述
+
+
+
