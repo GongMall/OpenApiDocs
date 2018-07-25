@@ -8,7 +8,7 @@
 
 **请求URL：**
 
-* /api/withdraw/getWithdrawList
+* https://openApi-qa.gongmall.com/api/withdraw/getWithdrawList
 
 **请求方式：**
 
@@ -40,7 +40,7 @@
 
 {
 
- “total”：100，
+“total”：100，
 
 “totalPage”：10，
 
@@ -50,29 +50,29 @@
 
 “occurMonth”：2018-07，
 
- “list”：{
+“list”：{
 
- “requestId”: ”12304” ,//客户请求标识
+“requestId”: ”12304” ,//客户请求标识
 
- “status”: 2 ,//失败
+“status”: 2 ,//失败
 
- “failReason”: ”企业余额不足” //失败原因
+“failReason”: ”企业余额不足” //失败原因
 
- “mobile”：“18500615259”，//手机号
+“mobile”：“18500615259”，//手机号
 
- “name”：“王鑫鑫”，//姓名
+“name”：“王鑫鑫”，//姓名
 
- “amount”：“1000”//提现金额
+“amount”：“1000”//提现金额
 
- “idNumber”：“620902198909280125”//身份证号
+“idNumber”：“620902198909280125”//身份证号
 
- “salaryAccount”：“6214830100799682”//银行卡号
+“salaryAccount”：“6214830100799682”//银行卡号
 
- “dateTime”：“20160125132356”//申请时间
+“dateTime”：“20160125132356”//申请时间
 
- “payDate”：“20160125132556”//实际付款时间
+“payDate”：“20160125132556”//实际付款时间
 
- }
+}
 
 }
 
