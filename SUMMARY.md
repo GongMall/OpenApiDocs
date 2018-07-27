@@ -17,7 +17,6 @@
 ## 实时提现
 
 * [企业账户充值](qi-ye-zhang-hu-chong-zhi.md)
-* [H5提现接入](ti-xian-jie-ru.md)
 * [查询企业余额](shi-shi-ti-xian/cha-xun-qi-ye-yu-e.md)
 * [修改员工银行卡](shi-shi-ti-xian/xiu-gai-yin-hang-ka.md)
 * [提现](shi-shi-ti-xian/ti-xian.md)
