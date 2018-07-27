@@ -8,7 +8,7 @@
 
 **请求URL：**
 
-* https://openApi-qa.gongmall.com/api/employee/syncBankAccount
+* [/api/employee/syncBankAccount](https://openApi-qa.gongmall.com/api/employee/syncBankAccount)
 
 **请求方式：**
 

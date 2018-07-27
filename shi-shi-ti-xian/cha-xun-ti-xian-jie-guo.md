@@ -11,7 +11,7 @@
 
 **请求URL：**
 
-* https://openApi-qa.gongmall.com/api/withdraw/getWithdrawResult
+* [/api/withdraw/getWithdrawResult](https://openApi-qa.gongmall.com/api/withdraw/getWithdrawResult)
 
 **请求方式：**
 

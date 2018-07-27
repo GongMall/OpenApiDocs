@@ -8,7 +8,7 @@
 
 **请求URL：**
 
-* [https://openApi-qa.gongmall.com/api/company/getBalance](https://openApi-qa.gongmall.com`/api/company/getBalance`)
+* [/api/company/getBalance](https://openApi-qa.gongmall.com`/api/company/getBalance`)
 
 **请求方式：**
 

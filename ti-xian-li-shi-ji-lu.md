@@ -8,7 +8,7 @@
 
 **请求URL：**
 
-* https://openApi-qa.gongmall.com/api/withdraw/getWithdrawList
+* [/api/withdraw/getWithdrawList](https://openApi-qa.gongmall.com/api/withdraw/getWithdrawList)
 
 **请求方式：**
 
