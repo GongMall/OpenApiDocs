@@ -48,8 +48,8 @@ https://contract-qa.gongmall.com/url_contract.html?companyId=xMEQMG&positionId=A
 https://contract-qa.gongmall.com/url_contract.html?companyId=xMEQMG&positionId=AVRKkP&data=lbrMBX7iME/iutEdBZKq/+dzI6EBnU0WwKQU1r5NEJ42evQt+RuqSa+8rk9BvRuYbT9jWJBQOo3kUw+48+MHVLv3SDWIFEgT6DNhKVQaEwmcOe2rhPtgF4NLALMkoGfoFglg57fJgmnUnLjIoyRGYQ==
 
 - 备注
-https://contract-qa.gongmall.com/url_contract.html?companyId=xMEQMG
-是我们根据系统生成的公司的唯一请求地址，后面的参数信息需要调用方按名称传给我们，用于生成合同和提现匹配。&之后的参数根据appkey+appSecret组合MD5大写作为秘钥，采用AES加密算法(算法中初始化向量IV采用16位的0)，最后将加密后的字符串作为data的值拼接在url请求到工猫，加密算法请参照不同语言示例
+https://contract-qa.gongmall.com/url_contract.html?companyId=xMEQMG&positionId=AVRKkP
+是我们根据系统生成的公司的唯一请求地址（如果贵司为：不同职位签约不同合同，那么可以根据职位传入positionId），后面的参数信息需要调用方按名称传给我们，用于生成合同和提现匹配。&之后的参数根据appkey+appSecret组合MD5大写作为秘钥，采用AES加密算法(算法中初始化向量IV采用16位的0)，最后将加密后的字符串作为data的值拼接在url请求到工猫，加密算法请参照不同语言示例
 
 ### 测试数据：
 [1]appkey+appsecret:  799ae002c7e940ef8a890b3a428f8f458e3f7c39d1cc2bf24390f0c46cf932c8    
