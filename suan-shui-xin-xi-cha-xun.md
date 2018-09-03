@@ -1,14 +1,14 @@
-### 提现
+### 算税信息
 
 ---
 
 **简要描述：**
 
-* 已签约员工在企业客户端发起提现请求，企业调用提现接口提交请求，将指定金额转入员工账户。
+* 已签约员工在企业客户端发起提现请求前，查看其所需要缴纳的个税、管理费及实际到账金额等信息。
 
 **请求URL：**
 
-* [/api/withdraw/doWithdraw](https://legacy.gitbook.com/book/gongmall/apidoc/edit#)
+* [/api/withdraw/getTaxInfo](https://legacy.gitbook.com/book/gongmall/apidoc/edit#)
 
 **请求方式：**
 
@@ -42,7 +42,7 @@
  {
     “success”：true，
      “data” ：{
-      “resultId”: ”12304” //提现请求标识
+      “resultId”: ”12304” //提现流程实例号
       “identity”：“620902198909280125”//身份证号
     }
 }

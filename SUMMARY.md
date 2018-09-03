@@ -19,6 +19,7 @@
 * [企业账户充值](qi-ye-zhang-hu-chong-zhi.md)
 * [查询企业余额](shi-shi-ti-xian/cha-xun-qi-ye-yu-e.md)
 * [修改员工银行卡](shi-shi-ti-xian/xiu-gai-yin-hang-ka.md)
+* [算税信息查询](suan-shui-xin-xi-cha-xun.md)
 * [提现](shi-shi-ti-xian/ti-xian.md)
 * [提现历史记录](ti-xian-li-shi-ji-lu.md)
 * [查询单笔提现结果](shi-shi-ti-xian/cha-xun-ti-xian-jie-guo.md)
