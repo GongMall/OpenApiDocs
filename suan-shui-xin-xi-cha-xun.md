@@ -29,12 +29,12 @@
 
 **返回参数说明**
 
-| 参数名 | 类型 | 说明 |
-| :--- | :--- | --- |
-| requestId | String | 客户请求标识 |
-| opflag | Integer | 0：失败 1：成功 |
-| identity | String | 身份证号码 |
-| appmentTime | String | 提交成功时间\(yyyyMMddHHmmss\) |
+| currentRealWage | BigDecimal | 实发金额 |
+| :--- | :--- | :--- |
+| currentManageFee | BigDecimal | 管理费金额 |
+| manageFeeBearType | int | 管理费承担（0：企业 1：个人） |
+| currentTax | BigDecimal | 个税金额 |
+| taxBearType | int | 个税承担（0：企业 1：个人） |
 
 **返回示例**
 
@@ -42,8 +42,11 @@
  {
     “success”：true，
      “data” ：{
-      “resultId”: ”12304” //提现流程实例号
-      “identity”：“620902198909280125”//身份证号
+      “currentRealWage”: 123 //实发金额
+      “currentManageFee”: 10 //管理费金额
+      “manageFeeBearType”: 0 //企业承担
+      “currentTax”: 10 //个税金额
+      “taxBearType”：1//个人承担
     }
 }
 ```
