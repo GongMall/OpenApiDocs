@@ -42,8 +42,10 @@
  {
     “success”：true，
      “data” ：{
-      “resultId”: ”12304” //提现请求标识
-      “identity”：“620902198909280125”//身份证号
+      “requestId”: ”12304”, //提现请求标识
+      “opflag”: 1, //请求状态0：失败 1：成功
+      “identity”：“620902198909280125”,//身份证号
+      “appmentTime”: ”2018-08-11” //提交成功时间(yyyyMMddHHmmss)
     }
 }
 ```
