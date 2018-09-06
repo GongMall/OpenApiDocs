@@ -32,7 +32,7 @@
 | 参数名 | 类型 | 说明 |
 | :--- | :--- | --- |
 | requestId | String | 客户请求标识 |
-| opflag | Integer | 0：失败 1：成功 |
+| opFlag | Integer | 0：失败 1：成功 |
 | identity | String | 身份证号码 |
 | appmentTime | String | 提交成功时间\(yyyyMMddHHmmss\) |
 
@@ -43,7 +43,7 @@
     “success”：true，
      “data” ：{
       “requestId”: ”12304”, //提现请求标识
-      “opflag”: 1, //请求状态0：失败 1：成功
+      “opFlag”: 1, //请求状态0：失败 1：成功
       “identity”：“620902198909280125”,//身份证号
       “appmentTime”: ”2018-08-11” //提交成功时间(yyyyMMddHHmmss)
     }
