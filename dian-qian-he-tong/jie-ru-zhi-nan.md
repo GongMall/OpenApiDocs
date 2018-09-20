@@ -312,16 +312,25 @@ namespace Gongmall.Util
         }
     }
 }
+
 ```
+
 {% sample lang="php" %}
 ** AES加密算法示例(PHP)：**
-    $plaintext  = urldecode(http_build_query($data));//AES加密
-    $plaintext  = urldecode(http_build_query($data));//AES加密
-    $key = strtoupper(md5($this->appKey . $this->appSecret));//加密key
-    $size = 16;$iv = str_repeat("\0",$size);//偏移量
-    $padding = $size - strlen($plaintext) % $size;//PKCS5Padding
-    $plaintext .= str_repeat(chr($padding), $padding);// 添加Padding
-    $encrypted = openssl_encrypt($plaintext, 'AES-192-CBC',base64_decode($key), OPENSSL_RAW_DATA |                                         OPENSSL_ZERO_PADDING, $iv);
+    //data为AES加密数据
+    $plaintext  = urldecode(http_build_query($data));
+    //加密key由配置的appKey与appSecret生成
+    $key = strtoupper(md5($this->appKey . $this->appSecret));
+    //偏移量
+    $size = 16;$iv = str_repeat("\0",$size);
+    // 添加Padding，使用//PKCS5Padding
+    $padding = $size - strlen($plaintext) % $size;
+    $plaintext .= str_repeat(chr($padding), $padding);
+    //使用AES-192-CBC进行加密
+    $encrypted = openssl_encrypt($plaintext, 'AES-192-CBC',base64_decode($key),OPENSSL_RAW_DATA | OPENSSL_ZERO_PADDING, $iv);
+    //加密结果
     $contractUrl = $this->contractUrl."&data=".base64_encode($encrypted);
     return $contractUrl;
+
+```
 {% endmethod %}
