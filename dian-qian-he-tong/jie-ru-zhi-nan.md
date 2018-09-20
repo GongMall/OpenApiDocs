@@ -313,4 +313,14 @@ namespace Gongmall.Util
     }
 }
 ```
+{% sample lang="php" %}
+** AES加密算法示例(PHP)：**
+$plaintext  =urldecode(http_build_query($data));//AES加密
+$key = strtoupper(md5($this->appKey . $this->appSecret));//加密key
+$size = 16;$iv = str_repeat("\0",$size);//偏移量
+$padding = $size - strlen($plaintext) % $size;//PKCS5Padding
+$plaintext .= str_repeat(chr($padding), $padding);// 添加Padding
+$encrypted = openssl_encrypt($plaintext, 'AES-192-CBC',base64_decode($key), OPENSSL_RAW_DATA | OPENSSL_ZERO_PADDING, $iv);
+$contractUrl = $this->contractUrl."&data=".base64_encode($encrypted);
+return $contractUrl;
 {% endmethod %}
