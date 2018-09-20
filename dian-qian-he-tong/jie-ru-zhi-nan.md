@@ -315,7 +315,7 @@ namespace Gongmall.Util
 ```
 {% sample lang="php" %}
 ** AES加密算法示例(PHP)：**
-        $plaintext  = urldecode(http_build_query($data));//AES加密
+    $plaintext  = urldecode(http_build_query($data));//AES加密
     $plaintext  = urldecode(http_build_query($data));//AES加密
     $key = strtoupper(md5($this->appKey . $this->appSecret));//加密key
     $size = 16;$iv = str_repeat("\0",$size);//偏移量
