@@ -18,7 +18,7 @@
 
 | 参数名 | 必选 | 类型 | 说明 |
 | :--- | :--- | :--- | --- |
-| requestId | 是 | string | 客户请求标识\(流水号\) |
+| requestId | 是 | string | 客户请求标识\(客户生成，工猫唯一识别\) |
 | status | 是 | string | 状态\(1:成功 2:失败\) |
 | failReason | 否 | string | 如果失败，失败原因 |
 | name | 是 | string | 姓名 |
