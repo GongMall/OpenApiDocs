@@ -6,6 +6,7 @@
 * [接口规范](overview/jie-kou-gui-fan.md)
 * [异常代码](overview/yi-chang-dai-ma.md)
 * [业务代码](overview/ye-wu-dai-ma.md)
+* [企业账户充值](qi-ye-zhang-hu-chong-zhi.md)
 
 ## 电签合同
 
@@ -16,7 +17,6 @@
 
 ## 实时提现
 
-* [企业账户充值](qi-ye-zhang-hu-chong-zhi.md)
 * [查询企业余额](shi-shi-ti-xian/cha-xun-qi-ye-yu-e.md)
 * [修改员工银行卡](shi-shi-ti-xian/xiu-gai-yin-hang-ka.md)
 * [算税信息查询](suan-shui-xin-xi-cha-xun.md)
