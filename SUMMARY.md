@@ -25,3 +25,7 @@
 * [查询单笔提现结果](shi-shi-ti-xian/cha-xun-ti-xian-jie-guo.md)
 * [回调提现结果](shi-shi-ti-xian/ti-xian-jie-guo-hui-diao.md)
 
+## 代发薪
+
+* [代发薪接口](dai-fa-xin-jie-kou.md)
+
