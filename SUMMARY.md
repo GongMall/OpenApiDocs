@@ -6,6 +6,7 @@
 * [接口规范](overview/jie-kou-gui-fan.md)
 * [异常代码](overview/yi-chang-dai-ma.md)
 * [业务代码](overview/ye-wu-dai-ma.md)
+* [代发薪接口](dai-fa-xin-jie-kou.md)
 
 ## 电签合同
 
@@ -26,6 +27,4 @@
 * [回调提现结果](shi-shi-ti-xian/ti-xian-jie-guo-hui-diao.md)
 
 ## 代发薪
-
-* [代发薪接口](dai-fa-xin-jie-kou.md)
 
