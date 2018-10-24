@@ -12,13 +12,14 @@
 
 | 参数 | 类型 | 必选 | 说明 |
 | --- | --- | --- | --- |
-| batchno | String | y | 批次号 |
-| parameters | Object | y | 工资单详情 |
+| requestId | String | y | 当前请求唯一标识 |
+| parameters | List | y | 工资单详情 |
 
 **parameters**
 
 |参数     | 类型 |必选 | 说明  |
 |---------|------|-----|-------|
+|orderId     |String|y    | 订单号全局唯一|
 |name     |String|y    | 姓名      |
 |mobile|String|y    |   手机号    |
 |bankAccount|String|y    |   银行卡    |   
@@ -32,18 +33,17 @@
 
 |参数     | 类型 | 说明  |
 |---------|------|-------|
-|batchno    |String|  批次号     | 
-|successNum |String|   成功笔数    |
-|failNum|String|    失败笔数   |   
-|failDetails|Object|    失败详情   | 
+|requestId    |String|请求唯一标识     | 
+|status    |String|处理状态     |
+|msg    |String|失败原因     |  
+|failDetails|List|    失败详情   | 
 
 ** failDetails**
 
-|参数     | 类型 | 说明  |
+|参数     | 类型 | 说明  
 |---------|------|-------|
-|workNumber|String|   员工号    |
-|errormsg|String|     错误原因  |
-|dateTime|String|     发薪时间  |  
+|orderId|String|   订单号全局唯一    |
+|errormsg|String|     错误原因  | 
 
 ** 返回实例  **
  {“success”：true }
@@ -56,16 +56,16 @@
 
   |参数     | 类型 | 说明  |
 |---------|------|-------|
-|batchno    |String|  批次号     | 
+|requestId    |String|  请求唯一标识     | 
 |successNum |String|   成功笔数    |
 |failNum|String|    失败笔数   |   
-|failDetails|Object|    失败详情   | 
+|failDetails|List|    失败详情   | 
 
 ** failDetails**
 
 |参数     | 类型 | 说明  |
 |---------|------|-------|
-|workNumber|String|   员工号    |
+|orderId|String|   订单号    |
 |errormsg|String|     错误原因  |
 |dateTime|String|     发薪时间  |
 
