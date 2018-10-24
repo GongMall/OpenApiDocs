@@ -6,7 +6,7 @@
     用于第三方调用工猫发薪接口.  
 **请求地址**
 
-* [/api/salary/payrollReport](https://contract-qa.gongmall.com/api/salary/payrollReport)  
+* [/api/salary/salaryReport]   
 
 **请求参数**
 
