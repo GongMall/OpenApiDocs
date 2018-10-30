@@ -62,7 +62,7 @@ public class SignUtil {
     public static final String SIGN = "sign";
     /**
      * 获取签名
-     * @param paramMap 包含业务参数，和appKey,nonce,timestamp这3个公共参数
+     * @param paramMap 包含所有业务参数，和appKey,nonce,timestamp这3个公共参数
      * @param appSecret
      * @return
      */
