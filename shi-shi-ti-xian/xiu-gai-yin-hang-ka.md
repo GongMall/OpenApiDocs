@@ -21,9 +21,9 @@
 | name | 是 | string | 姓名 |
 | mobile | 是 | string | 手机号 |
 | identity | 是 | string | 身份证号 |
-| oldBankName | 是 | string | 原始银行名称 |
+| oldBankName | 否 | string | 原始银行名称 |
 | oldBankAccount | 是 | string | 原始银行卡号 |
-| newBankName | 是 | string | 变更银行名称 |
+| newBankName | 否 | string | 变更银行名称 |
 | newBankAccount | 是 | string | 变更银行卡号 |
 
 **返回参数说明**
