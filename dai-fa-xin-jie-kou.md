@@ -48,39 +48,9 @@
 {
 "success": true,
 "data": {
-工猫开放平台——批量发薪接口文档 V1.5.1
-"batchNum": "20180410044",
-"status": "0"
-  }
+    "batchNum": "20180410044",
+    "status": "0"
+    }
 }
  
- **错误码**
-
-  - [错误码链接] (https://opendoc.gongmall.com/overview/yi-chang-dai-ma.html)  
-
-** 发薪回调（第三方提供回调地址）**
-
-  |参数     | 类型 | 说明  |
-|---------|------|-------|
-|requestId    |String|  请求唯一标识     | 
-|successNum |String|   成功笔数    |
-|failNum|String|    失败笔数   |   
-|failDetails|List|    失败详情   | 
-
-** failDetails**
-
-|参数     | 类型 | 说明  |
-|---------|------|-------|
-|orderId|String|   订单号    |
-|errormsg|String|     错误原因  |
-|dateTime|String|     发薪时间  |
-
-** 回调返回实例  **
-
-` {  “success”：true }` 
-
-``` 
-![](/assets/序列图.png) 
-
-![](/assets/流程图.png)
-
+ 
