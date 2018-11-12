@@ -17,19 +17,16 @@
 | batchNum | String | y |上传批次号(全局唯一，最大长度32位) |
 | payrollContent| String| y | 工资单详情（json字符串，最大笔数1000笔） |
 
-**parameters**
+**payrollContent**
 
 |参数     | 类型 |必选 | 说明  |
 |---------|------|-----|-------|
-|orderId     |String|y    | 订单号全局唯一|
+|requestId |String|y    | 单笔请求标识(全局唯一，最大长度32位)|
 |name     |String|y    | 姓名      |
-|mobile|String|y    |   手机号    |
-|bankAccount|String|y    |   银行卡    |   
-|workNumber|String|y    |  员工号     |
+|salaryAccount|String|y    |   银行卡 |   
 |amount|String|y    |   提现金额    |
-|identity|String|y    |  身份证号码     |
-|dateTime|String|y    |    发薪时间   |
-|remark|String|n    |   单据描叙    |
+|identity|String|y    |  身份证号码   |
+|dateTime|String|y    |    发薪时间（yyyyMMddHHmmss）   |
 
 **返回参数说明**
 
