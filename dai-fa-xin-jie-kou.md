@@ -32,17 +32,17 @@
 
 |参数     | 类型 | 说明  |
 |---------|------|-------|
-|requestId    |String|请求唯一标识     | 
-|status    |String|处理状态     |
-|msg    |String|失败原因     |  
-|failDetails|List|    失败详情   | 
+|success|boolean|请求是否成功    | 
+|data|Object|如果成功，成功数据     |
+|errorCode|String|如果失败，错误码     |  
+|errorMsg|String|    如果失败：失败原因（1、数据量过大，大于 1000 条 2、批次号已存在 3、输入参数格式不正确：工资单详情有空白值）   | 
 
-** failDetails**
+** data**
 
 |参数     | 类型 | 说明  
 |---------|------|-------|
-|orderId|String|   订单号全局唯一    |
-|errormsg|String|     错误原因  | 
+|batchNum|String|   上传批次号(全局唯一，最大长度32位    |
+|status |String|     0:处理中 1:处理完成  | 
 
 ** 返回实例  **
  {“success”：true }
