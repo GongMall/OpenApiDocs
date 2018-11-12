@@ -28,4 +28,5 @@
 ## 批量提交发薪数据
 
 * [代发薪接口](dai-fa-xin-jie-kou.md)
+* [工资单信息校验回调](dui-gong-zi-dan-xin-xi-jin-xing-xiang-xi-xiao-yan-chu-li-wan-cheng-hou-hui-diao-jie-kou.md)
 
