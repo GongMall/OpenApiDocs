@@ -20,7 +20,7 @@
 **payrollContent**
 
 |参数     | 类型 |必选 | 说明  |
-|---------|----|---|-------|
+|---------|----|---|---------|
 |requestId |String|y| 单笔请求标识(全局唯一，最大长度32位)|
 |name     |String|y| 姓名      |
 |salaryAccount|String|y|   银行卡 |   
