@@ -6,14 +6,16 @@
     用于第三方调用工猫发薪接口.  
 **请求地址**
 
-* [/api/payroll/payrollReport]   
+* [/api/payroll/importPayroll]   
 
+**请求方式**
+* POST
 **请求参数**
 
 | 参数 | 类型 | 必选 | 说明 |
 | --- | --- | --- | --- |
-| requestId | String | y | 当前请求唯一标识 |
-| parameters | List | y | 工资单详情 |
+| batchNum | String | y |上传批次号(全局唯一，最大长度32位) |
+| payrollContent| String| y | 工资单详情（json字符串，最大笔数1000笔） |
 
 **parameters**
 
