@@ -7,11 +7,11 @@
 提现完后查询结果的方式有两种，
 
 * 方法一：通过自行查询接口查询；
-* 方法二：[回调提现结果](shi-shi-ti-xian/ti-xian-jie-guo-hui-diao.md)推送到企业提供的接口地址    
+* 方法二：回调提现结果推送到企业提供的接口地址    
 
 **请求URL：**
 
-* [/api/withdraw/getWithdrawResult](https://openApi-qa.gongmall.com/api/withdraw/getWithdrawResult)
+* /api/withdraw/getWithdrawResult
 
 **请求方式：**
 

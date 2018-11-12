@@ -6,7 +6,7 @@
     用于第三方调用工猫发薪接口.返回请求结果  
 **请求地址**
 
-* [/api/payroll/importPayroll](https://openApiqa.gongmall.com/api/payroll/importPayroll)
+* /api/payroll/importPayroll
 
 **请求方式**
 

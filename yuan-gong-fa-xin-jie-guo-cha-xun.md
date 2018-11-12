@@ -6,7 +6,7 @@
    工资单导入进行发薪操作后，查询发薪结果。   
 **请求地址**
 
-* [/api/payroll/getPayResult](https://openapiqa.gongmall.com/api/payroll/getPayResult)   
+* /api/payroll/getPayResult  
 
 **请求方式**
 

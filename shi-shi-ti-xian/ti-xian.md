@@ -8,7 +8,7 @@
 
 **请求URL：**
 
-* [/api/withdraw/doWithdraw](https://legacy.gitbook.com/book/gongmall/apidoc/edit#)
+* /api/withdraw/doWithdraw
 
 **请求方式：**
 

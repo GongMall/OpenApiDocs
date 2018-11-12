@@ -8,7 +8,7 @@
 
 **请求URL：**
 
-* [/api/withdraw/getTaxInfo](https://legacy.gitbook.com/book/gongmall/apidoc/edit#)
+* /api/withdraw/getTaxInfo
 
 **请求方式：**
 
