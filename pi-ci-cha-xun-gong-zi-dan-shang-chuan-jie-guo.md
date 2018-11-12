@@ -1,14 +1,12 @@
-# 自发薪接口文档
+# 根据批次号查询上传工资单信息
 
 ---
 
 **简要描述：**  
-    用于第三方调用工猫发薪接口.  
+    客户工资单通过接口传入后，可以使用上传批次号查询工资单处理信息。 
 **请求地址**
 
-* [/api/payroll/importPayroll](https://openApiqa.gongmall.com/api/payroll/importPayroll)
-
-   
+* [/api/payroll/importPayroll]()   
 
 **请求方式**
 
