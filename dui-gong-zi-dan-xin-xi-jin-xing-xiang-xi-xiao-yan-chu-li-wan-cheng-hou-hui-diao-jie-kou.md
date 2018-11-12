@@ -11,24 +11,6 @@
 **请求方式**
 * POST
 
-**请求参数**
-
-| 参数 | 类型 | 必选 | 说明 |
-| --- | --- | --- | --- |
-| batchNum | String | y |上传批次号(全局唯一，最大长度32位) |
-| payrollContent| String| y | 工资单详情（json字符串，最大笔数1000笔） |
-
-**payrollContent**
-
-|参数     | 类型 |必选 | 说明  |
-|---------|----|---|---------|
-|requestId |String|y| 单笔请求标识(全局唯一，最大长度32位)|
-|name     |String|y| 姓名      |
-|salaryAccount|String|y|   银行卡 |   
-|amount|String|y|   提现金额    |
-|identity|String|y|  身份证号码   |
-|dateTime|String|y|    发薪时间（yyyyMMddHHmmss）   |
-
 **返回参数说明**
 
 |参数     | 类型 | 说明  |
