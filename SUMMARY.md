@@ -30,4 +30,5 @@
 * [代发薪接口](dai-fa-xin-jie-kou.md)
 * [工资单信息校验回调](dui-gong-zi-dan-xin-xi-jin-xing-xiang-xi-xiao-yan-chu-li-wan-cheng-hou-hui-diao-jie-kou.md)
 * [批次查询工资单上传结果](pi-ci-cha-xun-gong-zi-dan-shang-chuan-jie-guo.md)
+* [员工发薪结果查询](yuan-gong-fa-xin-jie-guo-cha-xun.md)
 
