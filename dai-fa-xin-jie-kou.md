@@ -26,7 +26,7 @@
 |salaryAccount|String|y    |   银行卡 |   
 |amount|String|y    |   提现金额    |
 |identity|String|y    |  身份证号码   |
-|dateTime|String|y    |    发薪时间（yyyyMMddHHmmss）   |
+|dateTime|String|y|    发薪时间（yyyyMMddHHmmss）   |
 
 **返回参数说明**
 
