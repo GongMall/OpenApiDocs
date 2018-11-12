@@ -45,7 +45,14 @@
 |status |String|     0:处理中 1:处理完成  | 
 
 ** 返回实例  **
- {“success”：true }
+{
+"success": true,
+"data": {
+工猫开放平台——批量发薪接口文档 V1.5.1
+"batchNum": "20180410044",
+"status": "0"
+  }
+}
  
  **错误码**
 
