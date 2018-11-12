@@ -8,7 +8,7 @@
 
 **请求URL：**
 
-* /[api/employee/getContractStatus](https://contract-qa.gongmall.com/api/employee/getContractStatus)
+* /api/employee/getContractStatus
 
 **请求方式：**
 
