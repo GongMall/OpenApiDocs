@@ -15,27 +15,21 @@
 
 |参数     | 类型 | 说明  |
 |---------|----|-------|
-|success|boolean|请求是否成功    | 
-|data|Object|如果成功，成功数据     |
-|errorCode|String|如果失败，错误码     |  
-|errorMsg|String|    如果失败：失败原因（1、数据量过大，大于 1000 条 2、批次号已存在 3、输入参数格式不正确：工资单详情有空白值）   | 
+|batchNum|String|批次号(最长32 位，全局唯一)    | 
+|totalRecord|int|本批次上传工资单总数 |
+|successRecord|int|本批次上传工资单成功数    |  
+|totalAmount|BigDecimal|本批次工资单总额| 
+|successAmount|BigDecimal|本批次工资单成功总金额| 
+|payrollContent|String|本批次工资单信息处理详情(json 字符串)|
 
-** data**
+
+** payrollContent**
 
 |参数     | 类型 | 说明  
 |---------|------|-------|
-|batchNum|String|   上传批次号(全局唯一，最大长度32位    |
-|status |String|     0:处理中 1:处理完成  | 
+|requestId|String|   单笔请求标识(最长 32 位，全局唯一)    |
+|status |String| 处理状态（-1:失败 ，1:成功   | 
+|failReason|String| 如果数据失败：失败原因（1、requestId重复 2、单笔发薪金额不能大于 500003、身份证号错误 4、员工未签约 5、姓名、身份证、银行卡验证不通过 6、此员工有其他正在进行中的操作（由于算税原因，当同一个员工已经提交发薪，未回调发薪状态是否成功时，不能再次导入）  7、同一员工同一批次不能重复发薪 | 
 
-** 返回实例  **
-```
-{
-"success": true,
-"data": {
-    "batchNum": "20180410044",
-    "status": "0"
-    }
-}
-```
-
-
+返回参数说明：
+请返回 json 格式的任何结果，表明已成功接收
