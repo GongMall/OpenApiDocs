@@ -20,18 +20,18 @@
 **payrollContent**
 
 |参数     | 类型 |必选 | 说明  |
-|---------|------|-----|-------|
-|requestId |String|y    | 单笔请求标识(全局唯一，最大长度32位)|
-|name     |String|y    | 姓名      |
-|salaryAccount|String|y    |   银行卡 |   
-|amount|String|y    |   提现金额    |
-|identity|String|y    |  身份证号码   |
+|---------|----|---|-------|
+|requestId |String|y| 单笔请求标识(全局唯一，最大长度32位)|
+|name     |String|y| 姓名      |
+|salaryAccount|String|y|   银行卡 |   
+|amount|String|y|   提现金额    |
+|identity|String|y|  身份证号码   |
 |dateTime|String|y|    发薪时间（yyyyMMddHHmmss）   |
 
 **返回参数说明**
 
 |参数     | 类型 | 说明  |
-|---------|------|-------|
+|---------|----|-------|
 |success|boolean|请求是否成功    | 
 |data|Object|如果成功，成功数据     |
 |errorCode|String|如果失败，错误码     |  
