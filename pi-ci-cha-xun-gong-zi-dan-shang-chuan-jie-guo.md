@@ -6,7 +6,7 @@
     客户工资单通过接口传入后，可以使用上传批次号查询工资单处理信息。 
 **请求地址**
 
-* [/api/payroll/importPayroll](https://openapiqa.gongmall.com/api/payroll/getImportResult)   
+* [/api/payroll/getImportResult](https://openapiqa.gongmall.com/api/payroll/getImportResult)   
 
 **请求方式**
 
