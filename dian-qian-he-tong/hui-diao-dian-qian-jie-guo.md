@@ -24,6 +24,8 @@
 | status | 是 | string | 合同状态 |
 | workNumber | 否 | string | 工号 |
 | extraParam | 否 | string | 附言参数，由传入方提供，回调时将原样返还，可以用来做用户数据标识 |
+| salaryAccount | 是 | String | 银行卡（对应电签时的bankNum） |
+| bankName | 是 | String | 银行名称 |
 
 **返回参数说明**
 
