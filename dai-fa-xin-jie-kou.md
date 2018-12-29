@@ -3,7 +3,7 @@
 ---
 
 **简要描述：**  
-    用于第三方调用工猫发薪接口.返回请求结果  
+    用于第三方调用工猫发薪接口，返回上传结果。  
 **请求地址**
 
 * /api/payroll/importPayroll
@@ -26,7 +26,7 @@
 | requestId | String | 是 | 单笔请求标识\(全局唯一，最大长度32位\) |
 | name | String | 是 | 姓名 |
 | salaryAccount | String | 是 | 银行卡 |
-| amount | String | 是 | 提现金额 |
+| amount | String | 是 | 发薪税前金额 |
 | identity | String | 是 | 身份证号码 |
 | dateTime | String | 是 | 发薪时间（yyyyMMddHHmmss） |
 
