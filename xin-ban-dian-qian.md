@@ -4,7 +4,7 @@
 **简要描述：** 
 
 - 业务背景
-   因业务需求，新增电签方式。
+  工猫科技充分认识到企业员工签订电子合同的场景需求，结合系统稳定性和双方对接成本等因素的综合考量，目前我们增加了一种标准的电子合同签署方式：私有链接。
 
 **电签功能对接：** 
 - 业务对接完成后，需销售主管向工猫总部为该企业开通电签功能。
@@ -27,17 +27,17 @@
 | 参数名 | 必选 | 类型 | 说明 |
 | :--- | :--- | :--- | --- |
 | mobile | 是 | string | 手机号 |
-| workNumber| 否 | string | 工号，可作为用户唯一标识 |
+| workNumber| 是 | string | 工号，可作为用户唯一标识 |
 | extraParam| 否 | string | 附言参数，由传入方提供，回调时将原样返还，可以用来做用户数据标识。数据量大时建议使用jsonString格式传输 |
 
 
 {% method %}
 **请求示例：** 
 - 加密前
-https://contract-qa.gongmall.com/?companyId=xMEQMG&positionId=AVRKkP&workNumber=123456789&mobile=15212345678&extraParam=我在使用新版电签进行签约
+https://contract-qa.gongmall.com/url_contract.html?companyId=xMEQMG&positionId=AVRKkP&workNumber=123456789&mobile=15212345678&extraParam=我在使用新版电签进行签约
 
 - 加密后
-https://contract-qa.gongmall.com/url_contract.html?companyId=xMEQMG&positionId=AVRKkP&data=lbrMBX7iME/iutEdBZKq/+dzI6EBnU0WwKQU1r5NEJ42evQt+RuqSa+8rk9BvRuYbT9jWJBQOo3kUw+48+MHVLv3SDWIFEgT6DNhKVQaEwmcOe2rhPtgF4NLALMkoGfoFglg57fJgmnUnLjIoyRGYQ==
+https://contract-qa.gongmall.com/url_contract.html?companyId=xMEQMG&positionId=AVRKkP&data=aiIxqoH+Wsvi7cYYN5vB29ufLSlc2qgxq3RO0f9r3r9T5X/hcag0SgIfnINS71KxWntj7+Dqx0PQH+14mMdg6rgfuUywVpsy3w/tS/uYY9nalcWPN5CHmtbg0V/fxO/M
 
 - 备注
 https://contract-qa.gongmall.com/url_contract.html?companyId=xMEQMG&positionId=AVRKkP
@@ -49,7 +49,7 @@ https://contract-qa.gongmall.com/url_contract.html?companyId=xMEQMG&positionId=A
 [3]待加密内容:  workNumber=123456789&mobile=15212345678&extraParam=我在使用新版电签进行签约
 
  
-[4]加密结果： 8LZZEXRhAfeeQOxF1iI9GpBcA2hSCelrUq2OimhSgZly6RfRonzGiE32vHh/JkdK+X5N5hFBMKz+iOmWAbgL9BIu2GIAxBIXCOusxFU4eDJ/5uy7F9vR9EE5NqOAiHBZhTP3pzMtEc0fLAzg8Tsngg==
+[4]加密结果： aiIxqoH+Wsvi7cYYN5vB29ufLSlc2qgxq3RO0f9r3r9T5X/hcag0SgIfnINS71KxWntj7+Dqx0PQH+14mMdg6rgfuUywVpsy3w/tS/uYY9nalcWPN5CHmtbg0V/fxO/M
 
 {% sample lang="java" %}
 ** AES加密算法示例(JAVA)：**
