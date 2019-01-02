@@ -34,13 +34,13 @@
 {% method %}
 **请求示例：** 
 - 加密前
-https://contract-qa.gongmall.com/url_contract.html?companyId=xMEQMG&positionId=AVRKkP&workNumber=123456789&mobile=15212345678&extraParam=我在使用新版电签进行签约
+https://contract-qa.gongmall.com/simple_collect.html?companyId=xMEQMG&positionId=AVRKkP&workNumber=123456789&mobile=15212345678&extraParam=我在使用新版电签进行签约
 
 - 加密后
-https://contract-qa.gongmall.com/url_contract.html?companyId=xMEQMG&positionId=AVRKkP&data=aiIxqoH+Wsvi7cYYN5vB29ufLSlc2qgxq3RO0f9r3r9T5X/hcag0SgIfnINS71KxWntj7+Dqx0PQH+14mMdg6rgfuUywVpsy3w/tS/uYY9nalcWPN5CHmtbg0V/fxO/M
+https://contract-qa.gongmall.com/simple_collect.html?companyId=xMEQMG&positionId=AVRKkP&data=aiIxqoH+Wsvi7cYYN5vB29ufLSlc2qgxq3RO0f9r3r9T5X/hcag0SgIfnINS71KxWntj7+Dqx0PQH+14mMdg6rgfuUywVpsy3w/tS/uYY9nalcWPN5CHmtbg0V/fxO/M
 
 - 备注
-https://contract-qa.gongmall.com/url_contract.html?companyId=xMEQMG&positionId=AVRKkP
+https://contract-qa.gongmall.com/simple_collect.html?companyId=xMEQMG&positionId=AVRKkP
 是我们根据系统生成的公司的唯一请求地址（如果贵司为：不同职位签约不同合同，那么可以根据职位传入positionId），后面的参数信息需要调用方按名称传给我们，用于生成合同和提现匹配。&之后的参数根据appkey+appSecret组合MD5大写作为秘钥，采用AES加密算法(算法中初始化向量IV采用16位的0)，最后将加密后的字符串作为data的值拼接在url请求到工猫，加密算法请参照不同语言示例
 
 ### 测试数据：
