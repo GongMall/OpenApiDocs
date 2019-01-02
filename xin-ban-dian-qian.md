@@ -33,7 +33,6 @@
 
 {% method %}
 **请求示例：** 
-https://contract-qa.gongmall.com/?companyId=DPYAkP&positionId=3PG5Az
 - 加密前
 https://contract-qa.gongmall.com/?companyId=xMEQMG&positionId=AVRKkP&workNumber=123456789&mobile=15212345678&extraParam=我在使用新版电签进行签约
 
