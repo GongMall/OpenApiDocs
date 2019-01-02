@@ -55,7 +55,7 @@ https://contract-qa.gongmall.com/url_contract.html?companyId=xMEQMG&positionId=A
 [1]appkey+appsecret:  799ae002c7e940ef8a890b3a428f8f458e3f7c39d1cc2bf24390f0c46cf932c8    
 [2]md5(32位): 61CC5DF78D360167F8618237DAF643EA      
 [3]待加密内容:  name=王星星&mobile=15212345678&idNumber=620402198709215456&bankName=招商银行&bankNum=6214830100799652 
-[4]加密结果： 8LZZEXRhAfeeQOxF1iI9GpBcA2hSCelrUq2OimhSgZly6RfRonzGiE32vHh/JkdK+X5N5hFBMKz+iOmWAbgL9BIu2GIAxBIXCOusxFU4eDJ/5uy7F9vR9EE5NqOAiHBZhTP3pzMtEc0fLAzg8Tsngg==
+[4]加密结果： lbrMBX7iME/iutEdBZKq/+dzI6EBnU0WwKQU1r5NEJ42evQt+RuqSa+8rk9BvRuYbT9jWJBQOo3kUw+48+MHVLv3SDWIFEgT6DNhKVQaEwmcOe2rhPtgF4NLALMkoGfoFglg57fJgmnUnLjIoyRGYQ==
 
 {% sample lang="java" %}
 ** AES加密算法示例(JAVA)：**
