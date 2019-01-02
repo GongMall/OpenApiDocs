@@ -9,9 +9,9 @@
 
 ## 电签合同
 
-* [电签接入指南\_ V1.0](dian-qian-he-tong/jie-ru-zhi-nan.md)
+* [接入指南V1](dian-qian-he-tong/jie-ru-zhi-nan.md)
   * 新版电签
-* [新版电签接入指南\_ V2.0](xin-ban-dian-qian.md)
+* [接入指南V2](xin-ban-dian-qian.md)
 * [查询电签结果](dian-qian-he-tong/cha-xun-dian-qian-jie-guo.md)
 * [回调电签结果](dian-qian-he-tong/hui-diao-dian-qian-jie-guo.md)
 * [支持银行](zhi-chi-de-yin-xing-lie-biao.md)
