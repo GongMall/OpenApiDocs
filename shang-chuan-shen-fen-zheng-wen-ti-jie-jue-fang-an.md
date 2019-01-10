@@ -6,15 +6,15 @@
 - 业务背景
 
     电签电业增加了上传身份证功能，由于客户技术对接时，经常出现身份证不能上传的问题，特推出一个简单的解决方案。
-- 问题描述
+- 问题描述 
 
-    点击H5中 input type="file" 标签，不能打开android资源管理器，因为 android webview 由于考虑安全原因屏蔽了 input type="file" 这个功能，需要做如下配置方可使用。
+     点击H5中 input type="file" 标签，不能打开android资源管理器，因为 android webview 由于考虑安全原因屏蔽了 input type="file" 这个功能，需要做如下配置方可使用。
 
 **解决方案：** 
 ```
 
 1、重写onActivityResult
-public void onActivityResult(int requestCode, int resultCode, Intent intent) {
+    public void onActivityResult(int requestCode, int resultCode, Intent intent) {
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
         if (requestCode == REQUEST_SELECT_FILE) {
             if (uploadMessage == null)
@@ -35,8 +35,8 @@ public void onActivityResult(int requestCode, int resultCode, Intent intent) {
 }
 
 2、添加webview的WebChromeClient配置
-private WebChromeClient webChromeClient = new WebChromeClient() {
-   protected void openFileChooser(ValueCallback uploadMsg, String acceptType) {
+    private WebChromeClient webChromeClient = new WebChromeClient() {
+    protected void openFileChooser(ValueCallback uploadMsg, String acceptType) {
         mUploadMessage = uploadMsg;
         Intent i = new Intent(Intent.ACTION_GET_CONTENT);
         i.addCategory(Intent.CATEGORY_OPENABLE);
@@ -81,4 +81,3 @@ private WebChromeClient webChromeClient = new WebChromeClient() {
 };
 
 ```
-{% endmethod %}
