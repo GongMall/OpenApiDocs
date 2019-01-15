@@ -14,6 +14,10 @@
 ```
 
 1、重写onActivityResult
+public ValueCallback<Uri[]> uploadMessage;
+private final static int FILECHOOSER_RESULTCODE = 2;
+private ValueCallback<Uri> mUploadMessage;
+public static final int REQUEST_SELECT_FILE = 100;
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
         if (requestCode == REQUEST_SELECT_FILE) {
