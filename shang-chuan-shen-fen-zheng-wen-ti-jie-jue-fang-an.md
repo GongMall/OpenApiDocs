@@ -87,10 +87,12 @@ public static final int REQUEST_SELECT_FILE = 100;
     }
 };
 
+```
+
 
 **合同不能正常显示问题请做如下配置：** 
 
-
+```
 - 问题描述 
 
      webview嵌入h5合同页面会产生一些兼容问题，需要做如下配置。
@@ -107,4 +109,6 @@ webSettings.setLoadWithOverviewMode(true);
 webSettings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);
 
 ```
+
+
 
