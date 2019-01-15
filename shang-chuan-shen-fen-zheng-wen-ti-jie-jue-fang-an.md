@@ -6,18 +6,22 @@
 - 业务背景
 
     电签电业增加了上传身份证功能，由于客户技术对接时，经常出现身份证不能上传的问题，特推出一个简单的解决方案。
+
+
+**基于App嵌套电签上传身份证出现不能点击问题解决方案：** 
+```
 - 问题描述 
 
      点击H5中 input type="file" 标签，不能打开android资源管理器，因为 android webview 由于考虑安全原因屏蔽了 input type="file" 这个功能，需要做如下配置方可使用。
 
-**解决方案：** 
-```
+配置：
 
-1、重写onActivityResult
 public ValueCallback<Uri[]> uploadMessage;
 private final static int FILECHOOSER_RESULTCODE = 2;
 private ValueCallback<Uri> mUploadMessage;
 public static final int REQUEST_SELECT_FILE = 100;
+
+1、重写onActivityResult
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
         if (requestCode == REQUEST_SELECT_FILE) {
@@ -83,5 +87,23 @@ public static final int REQUEST_SELECT_FILE = 100;
         startActivityForResult(Intent.createChooser(i, "File Chooser"), FILECHOOSER_RESULTCODE);
     }
 };
+
+```
+**合同不能正常显示问题请做如下配置：** 
+
+``` 
+- 问题描述 
+
+     webview嵌入h5合同页面会产生一些兼容问题，需要做如下配置。
+
+解决方法：
+WebSettings webSettings = webView.getSettings();
+webSettings.setJavaScriptEnabled(true);//允许使用js
+webSettings.setDomStorageEnabled(true);
+webSettings.setSupportZoom(true);
+webSettings.setBuiltInZoomControls(true);
+webSettings.setUseWideViewPort(true);
+webSettings.setLoadWithOverviewMode(true);
+webSettings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);
 
 ```
