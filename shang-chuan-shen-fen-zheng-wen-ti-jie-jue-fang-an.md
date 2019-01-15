@@ -1,4 +1,4 @@
-### 基于App嵌套电签上传身份证出现不能点击问题解决方案
+### 基于App嵌入合同的一些配置
 ---
 
 **简要描述：** 
@@ -14,14 +14,13 @@
 
      点击H5中 input type="file" 标签，不能打开android资源管理器，因为 android webview 由于考虑安全原因屏蔽了 input type="file" 这个功能，需要做如下配置方可使用。
 
-配置：
-
+1、配置：
 public ValueCallback<Uri[]> uploadMessage;
 private final static int FILECHOOSER_RESULTCODE = 2;
 private ValueCallback<Uri> mUploadMessage;
 public static final int REQUEST_SELECT_FILE = 100;
 
-1、重写onActivityResult
+2、重写onActivityResult
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
         if (requestCode == REQUEST_SELECT_FILE) {
@@ -42,7 +41,7 @@ public static final int REQUEST_SELECT_FILE = 100;
         Toast.makeText(getBaseContext(), "Failed to Upload Image", Toast.LENGTH_LONG).show();
 }
 
-2、添加webview的WebChromeClient配置
+3、添加webview的WebChromeClient配置
     private WebChromeClient webChromeClient = new WebChromeClient() {
     protected void openFileChooser(ValueCallback uploadMsg, String acceptType) {
         mUploadMessage = uploadMsg;
@@ -99,6 +98,7 @@ public static final int REQUEST_SELECT_FILE = 100;
 解决方法：
 WebSettings webSettings = webView.getSettings();
 webSettings.setJavaScriptEnabled(true);//允许使用js
+// 解决兼容显示问题
 webSettings.setDomStorageEnabled(true);
 webSettings.setSupportZoom(true);
 webSettings.setBuiltInZoomControls(true);
