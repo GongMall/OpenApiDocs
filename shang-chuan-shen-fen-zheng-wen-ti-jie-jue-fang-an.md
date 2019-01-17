@@ -1,14 +1,15 @@
 ### 基于App嵌入合同的一些配置
+
 ---
 
-**简要描述：** 
+**简要描述：**
 
-- 业务背景
+* 业务背景
 
-    电签电业增加了上传身份证功能，由于客户技术对接时，经常出现身份证不能上传的问题，特推出一个简单的解决方案。
+  电签业务增加了上传身份证功能，由于客户技术对接时，经常出现身份证不能上传的问题，特推出一个简单的解决方案。
 
+**基于App嵌套电签上传身份证出现不能点击问题解决方案：**
 
-**基于App嵌套电签上传身份证出现不能点击问题解决方案：** 
 ```
 - 问题描述 
 
@@ -86,11 +87,9 @@ public static final int REQUEST_SELECT_FILE = 100;
         startActivityForResult(Intent.createChooser(i, "File Chooser"), FILECHOOSER_RESULTCODE);
     }
 };
-
 ```
 
-
-**合同不能正常显示问题请做如下配置：** 
+**合同不能正常显示问题请做如下配置：**
 
 ```
 - 问题描述 
@@ -107,9 +106,9 @@ webSettings.setBuiltInZoomControls(true);
 webSettings.setUseWideViewPort(true);
 webSettings.setLoadWithOverviewMode(true);
 webSettings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);
-
 ```
-**ios app选择图片的问题：** 
+
+**ios app选择图片的问题：**
 
 ```
 - 问题描述
@@ -118,5 +117,6 @@ webSettings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);
 解决方法：      
 loadRequest需要在在viewDidLoad内调用
 ```
+
 
 
