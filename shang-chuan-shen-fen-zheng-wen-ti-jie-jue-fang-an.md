@@ -109,6 +109,14 @@ webSettings.setLoadWithOverviewMode(true);
 webSettings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);
 
 ```
+**ios app选择图片的问题：** 
 
+```
+- 问题描述
+    关于ios app选择图片完成后页面会返回问题：
+
+解决方法：      
+loadRequest需要在在viewDidLoad内调用
+```
 
 
