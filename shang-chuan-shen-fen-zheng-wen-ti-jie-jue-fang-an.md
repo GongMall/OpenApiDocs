@@ -20,6 +20,7 @@ public ValueCallback<Uri[]> uploadMessage;
 private final static int FILECHOOSER_RESULTCODE = 2;
 private ValueCallback<Uri> mUploadMessage;
 public static final int REQUEST_SELECT_FILE = 100;
+private Uri imageUri;
 
 2、重写onActivityResult
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
@@ -46,10 +47,7 @@ public static final int REQUEST_SELECT_FILE = 100;
     private WebChromeClient webChromeClient = new WebChromeClient() {
     protected void openFileChooser(ValueCallback uploadMsg, String acceptType) {
         mUploadMessage = uploadMsg;
-        Intent i = new Intent(Intent.ACTION_GET_CONTENT);
-        i.addCategory(Intent.CATEGORY_OPENABLE);
-        i.setType("image/*");
-        startActivityForResult(Intent.createChooser(i, "File Browser"), FILECHOOSER_RESULTCODE);
+        take();
     }
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
@@ -59,34 +57,52 @@ public static final int REQUEST_SELECT_FILE = 100;
             uploadMessage = null;
         }
         uploadMessage = filePathCallback;
-        Intent intent = fileChooserParams.createIntent();
-        try {
-            startActivityForResult(intent, REQUEST_SELECT_FILE);
-        } catch (ActivityNotFoundException e) {
-            uploadMessage = null;
-            Toast.makeText(getBaseContext(), "Cannot Open File Chooser", Toast.LENGTH_LONG).show();
-            return false;
-        }
+        take();
         return true;
     }
 
     //For Android 4.1 only
     protected void openFileChooser(ValueCallback<Uri> uploadMsg, String acceptType, String capture) {
         mUploadMessage = uploadMsg;
-        Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-        intent.addCategory(Intent.CATEGORY_OPENABLE);
-        intent.setType("image/*");
-        startActivityForResult(Intent.createChooser(intent, "File Browser"), FILECHOOSER_RESULTCODE);
+        take();
     }
 
     protected void openFileChooser(ValueCallback<Uri> uploadMsg) {
         mUploadMessage = uploadMsg;
-        Intent i = new Intent(Intent.ACTION_GET_CONTENT);
-        i.addCategory(Intent.CATEGORY_OPENABLE);
-        i.setType("image/*");
-        startActivityForResult(Intent.createChooser(i, "File Chooser"), FILECHOOSER_RESULTCODE);
+        take();
     }
 };
+
+private void take() {
+    File imageStorageDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "MyApp");
+    // Create the storage directory if it does not exist
+    if (!imageStorageDir.exists()) {
+        imageStorageDir.mkdirs();
+    }
+    File file = new File(imageStorageDir + File.separator + "IMG_" + String.valueOf(System.currentTimeMillis()) + ".jpg");
+    imageUri = Uri.fromFile(file);
+
+    final List<Intent> cameraIntents = new ArrayList<Intent>();
+    final Intent captureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+    final PackageManager packageManager = getPackageManager();
+    final List<ResolveInfo> listCam = packageManager.queryIntentActivities(captureIntent, 0);
+    for (ResolveInfo res : listCam) {
+        final String packageName = res.activityInfo.packageName;
+        final Intent i = new Intent(captureIntent);
+        i.setComponent(new ComponentName(res.activityInfo.packageName, res.activityInfo.name));
+        i.setPackage(packageName);
+        i.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
+        cameraIntents.add(i);
+
+    }
+    Intent i = new Intent(Intent.ACTION_GET_CONTENT);
+    i.addCategory(Intent.CATEGORY_OPENABLE);
+    i.setType("image/*");
+    Intent chooserIntent = Intent.createChooser(i, "Image Chooser");
+    chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, cameraIntents.toArray(new Parcelable[]{}));
+    MainActivity.this.startActivityForResult(chooserIntent, FILECHOOSER_RESULTCODE);
+}
+
 ```
 
 **合同不能正常显示问题请做如下配置：**
