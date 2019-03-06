@@ -42,7 +42,7 @@
 **请求示例：** 
 
 - 加密前
-https://contract-qa.gongmall.com/url_contract.html?companyId=xMEQMG&positionId=AVRKkP&name=王星星&mobile=15212345678&idNumber=620402198709215456&bankName=招商银行&bankNum=6214830100799652
+https://contract-qa.gongmall.com/url_contract.html?companyId=xMEQMG&positionId=AVRKkP&name=王星星&mobile=15212345678&bankName=招商银行&bankNum=6214830100799652&idNumber=620402198709215456
 
 - 加密后
 https://contract-qa.gongmall.com/url_contract.html?companyId=xMEQMG&positionId=AVRKkP&data=lbrMBX7iME/iutEdBZKq/+dzI6EBnU0WwKQU1r5NEJ5rbYgHK7i7XR2+FPpFmU+BGQ50/PPLyR6Jb2O7FDn6dUjmF3zrrRwPVinQAtmZJU/O8BCGGZxpTM/W1FAW9SHzkdk5afOcUsT9xHLsIx4e5Q==
@@ -54,7 +54,7 @@ https://contract-qa.gongmall.com/url_contract.html?companyId=xMEQMG&positionId=A
 ### 测试数据：
 [1]appkey+appsecret:  061f449a73644770bdbe5a7598f2de74aa233864d1f9204ac3aee5d19969e9ba    
 [2]md5(32位): ED7CB552C6DBDBAD71ED6F339C1CF21D      
-[3]待加密内容:  name=王星星&mobile=15212345678&idNumber=620402198709215456&bankName=招商银行&bankNum=6214830100799652
+[3]待加密内容:  name=王星星&mobile=15212345678&bankName=招商银行&bankNum=6214830100799652&idNumber=620402198709215456
 [4]加密结果： lbrMBX7iME/iutEdBZKq/+dzI6EBnU0WwKQU1r5NEJ5rbYgHK7i7XR2+FPpFmU+BGQ50/PPLyR6Jb2O7FDn6dUjmF3zrrRwPVinQAtmZJU/O8BCGGZxpTM/W1FAW9SHzkdk5afOcUsT9xHLsIx4e5Q==
 
 {% sample lang="java" %}
