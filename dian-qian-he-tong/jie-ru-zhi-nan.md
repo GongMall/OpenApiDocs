@@ -58,7 +58,7 @@ https://contract-qa.gongmall.com/url_contract.html?companyId=xMEQMG&positionId=A
 [4]加密结果： lbrMBX7iME/iutEdBZKq/+dzI6EBnU0WwKQU1r5NEJ5rbYgHK7i7XR2+FPpFmU+BGQ50/PPLyR6Jb2O7FDn6dUjmF3zrrRwPVinQAtmZJU/O8BCGGZxpTM/W1FAW9SHzkdk5afOcUsT9xHLsIx4e5Q==
 
 {% sample lang="java" %}
-** AES加密算法示例(JAVA，使用此方法加密，请将jdk升级至jdk8u191及以上版本)：**
+** AES加密算法示例(JAVA)：**
 
 ```java
 import java.lang.reflect.Constructor;
