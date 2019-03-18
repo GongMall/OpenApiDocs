@@ -25,7 +25,7 @@
 | identity | 是 | string | 身份证号码 |
 | bankAccount | 是 | string | 银行卡 |
 | dateTime | 是 | string | 申请时间\(yyyyMMddHHmmss\) |
-| remark | 否 | string | 单据描叙 |
+| remark | 否 | string | 单据描叙，最长200位 |
 
 **返回参数说明**
 
