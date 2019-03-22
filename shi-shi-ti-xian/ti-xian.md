@@ -23,7 +23,7 @@
 | name | 是 | string | 姓名 |
 | amount | 是 | BigDecimal | 提现金额 |
 | identity | 是 | string | 身份证号码 |
-| bankAccount | 是 | string | 银行卡 |
+| bankAccount | 是 | string | 入款账号（银行卡提现此字段传入员工绑定的银行卡，支付宝提现此字段请传入员工绑定的支付宝账号） |
 | dateTime | 是 | string | 申请时间\(yyyyMMddHHmmss\) |
 | remark | 否 | string | 单据描叙,最长200位 |
 
