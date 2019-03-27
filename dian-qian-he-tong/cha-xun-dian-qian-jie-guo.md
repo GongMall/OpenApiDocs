@@ -27,15 +27,19 @@
 
 | 参数名 | 类型 | 说明 |
 | :--- | :--- | --- |
-| success | boolean | 请求结果，true：成功；false：失败 |
-| errorCode | string | 错误码 |
-| errorMsg | string | 失败原因 |
+| mobile| String | 手机号 |
+| name | string | 姓名 |
+| identity | string | 身份证号 |
+| workNumber | string | 工号 |
+| bankAccount | string | 提现收款账号 |
+| bankName | string | 账号名称 |
+| status | string | 电签状态 |
 
 **返回示例**
 
 ```
  {
-    “success”：true
+    “success”：true//已电签
     “data” ：{
       “mobile”: “15246265523”, //手机号
       “name”:“张三”,//姓名
@@ -47,6 +51,7 @@
     }
 
  }
+
 ```
 
 **备注**
