@@ -24,6 +24,9 @@
 | name | 是 | string | 姓名 |
 | mobile | 是 | string | 手机号 |
 | amount | 是 | string | 提现金额 |
+| currentTax| 是 | string | 当次缴纳个税 |
+| currentRealWage | 是 | string | 实发金额 |
+| currentManageFee | 是 | string | 当次提现管理费 |
 | identity | 是 | string | 身份证号码 |
 | bankName | 是 | string | 银行名称 |
 | bankAccount | 是 | string | 银行卡 |
