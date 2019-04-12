@@ -38,6 +38,7 @@
 | workNumber| 否 | string | 工号,最长50位，可作为用户唯一标识 |
 | reserveMobile| 否 | string | 银行卡预留手机号 |
 | extraParam| 否 | string | 附言参数，最长500位,由传入方提供，数据量大时建议使用jsonString格式传输。|
+
 {% method %}
 
 extraParam的作用：
