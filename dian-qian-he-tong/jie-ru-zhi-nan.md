@@ -51,8 +51,8 @@ extraParam的作用：
 ** extraParam动态参数处理：**
 
 ```
-贵司提供的返回地址uri（如https://www.gongmall.com/?data=1）拼接上&extraParam=encodeExtraParam即url=
-https://www.gongmall.com/?data=1&extraParam=encodeExtraParam，并使用decodeURIComponent(extraParam)方法进行解密即可
+贵司提供的返回地址uri（如https://www.xxx.com/?data=1）拼接上&extraParam=encodeExtraParam即url=
+https://www.xxx.com/?data=1&extraParam=encodeExtraParam，并使用decodeURIComponent(extraParam)方法进行解密即可
 ```
 {% endmethod %}
 
