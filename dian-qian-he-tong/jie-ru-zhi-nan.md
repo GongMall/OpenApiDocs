@@ -37,18 +37,28 @@
 | bankName| 否 | string | 银行名称,最长50位 |
 | workNumber| 否 | string | 工号,最长50位，可作为用户唯一标识 |
 | reserveMobile| 否 | string | 银行卡预留手机号 |
-| extraParam| 否 | string | 附言参数，最长500位,由传入方提供，回调时将原样返还，可以用来做用户数据标识。数据量大时建议使用jsonString格式传输 |
+| extraParam| 否 | string | 附言参数，最长500位,由传入方提供，数据量大时建议使用jsonString格式传输。|
 
-
+extraParam的作用：
+    1、回调时将原样返还，可以用来做用户数据标识。
+    2、如果电签成功后配置的返回地址需要加动态参数则可以作为动态参数传入(工猫对参数作：
+    let encodeExtraParam=encodeURIComponent(extraParam) 操作)，如原返回地址：https://www.gongmall.com/?data=1如需要返回附言参数，地址将更新为：https://www.gongmall.com/?data=1extraParam=1234
+对返回地址的动态参数extraParam解码后可正常使用（不使用动态参数）,解码方式:
+{% method %}
+```
+贵司提供的返回地址uri（如https://www.gongmall.com/?data=1）拼接上&extraParam=encodeExtraParam即url=
+https://www.gongmall.com/?data=1&extraParam=encodeExtraParam，并使用decodeURIComponent(extraParam)方法进行解密即可
+```
+{% endmethod %}
 
 {% method %}
 **请求示例：** 
 
 - 加密前
-https://contract-qa.gongmall.com/url_contract.html?companyId=xMEQMG&positionId=AVRKkP&name=王星星&mobile=15212345678&bankName=招商银行&bankNum=6214830100799652&idNumber=620402198709215456
+https://contract-qa.gongmall.com/url_contract.html?companyId=xMEQMG&positionId=AVRKkP&name=王星星&mobile=15212345678&bankName=招商银行&bankNum=6214830100799652&idNumber=620402198709215456&extraParam=1234
 
 - 加密后
-https://contract-qa.gongmall.com/url_contract.html?companyId=xMEQMG&positionId=AVRKkP&data=lbrMBX7iME/iutEdBZKq/+dzI6EBnU0WwKQU1r5NEJ5rbYgHK7i7XR2+FPpFmU+BGQ50/PPLyR6Jb2O7FDn6dUjmF3zrrRwPVinQAtmZJU/O8BCGGZxpTM/W1FAW9SHzkdk5afOcUsT9xHLsIx4e5Q==
+https://contract-qa.gongmall.com/url_contract.html?companyId=xMEQMG&positionId=AVRKkP&data=lbrMBX7iME/iutEdBZKq/+dzI6EBnU0WwKQU1r5NEJ5rbYgHK7i7XR2+FPpFmU+BGQ50/PPLyR6Jb2O7FDn6dUjmF3zrrRwPVinQAtmZJU/O8BCGGZxpTM/W1FAW9SHzhAMu4yIETj4u5W2n5uOQ0OSjQSREm4zMl93nw/fuFFQ=
 
 - 备注
 https://contract-qa.gongmall.com/url_contract.html?companyId=xMEQMG&positionId=AVRKkP
@@ -57,8 +67,9 @@ https://contract-qa.gongmall.com/url_contract.html?companyId=xMEQMG&positionId=A
 ### 测试数据：
 [1]appkey+appsecret:  061f449a73644770bdbe5a7598f2de74aa233864d1f9204ac3aee5d19969e9ba    
 [2]md5(32位): ED7CB552C6DBDBAD71ED6F339C1CF21D      
-[3]待加密内容:  name=王星星&mobile=15212345678&bankName=招商银行&bankNum=6214830100799652&idNumber=620402198709215456
-[4]加密结果： lbrMBX7iME/iutEdBZKq/+dzI6EBnU0WwKQU1r5NEJ5rbYgHK7i7XR2+FPpFmU+BGQ50/PPLyR6Jb2O7FDn6dUjmF3zrrRwPVinQAtmZJU/O8BCGGZxpTM/W1FAW9SHzkdk5afOcUsT9xHLsIx4e5Q==
+[3]待加密内容:  name=王星星&mobile=15212345678&bankName=招商银行&bankNum=6214830100799652&idNumber=620402198709215456&extraParam=1234
+
+[4]加密结果： lbrMBX7iME/iutEdBZKq/+dzI6EBnU0WwKQU1r5NEJ5rbYgHK7i7XR2+FPpFmU+BGQ50/PPLyR6Jb2O7FDn6dUjmF3zrrRwPVinQAtmZJU/O8BCGGZxpTM/W1FAW9SHzhAMu4yIETj4u5W2n5uOQ0OSjQSREm4zMl93nw/fuFFQ=
 
 {% sample lang="java" %}
 ** AES加密算法示例(JAVA)：**
