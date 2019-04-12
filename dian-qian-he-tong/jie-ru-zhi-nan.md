@@ -38,13 +38,14 @@
 | workNumber| 否 | string | 工号,最长50位，可作为用户唯一标识 |
 | reserveMobile| 否 | string | 银行卡预留手机号 |
 | extraParam| 否 | string | 附言参数，最长500位,由传入方提供，数据量大时建议使用jsonString格式传输。|
+{% method %}
 
 extraParam的作用：
     1、回调时将原样返还，可以用来做用户数据标识。
     2、如果电签成功后配置的返回地址需要加动态参数则可以作为动态参数传入(工猫对参数作：
     let encodeExtraParam=encodeURIComponent(extraParam) 操作)，如原返回地址：https://www.gongmall.com/?data=1如需要返回附言参数，地址将更新为：https://www.gongmall.com/?data=1extraParam=1234
 对返回地址的动态参数extraParam解码后可正常使用（不使用动态参数）,解码方式:
-{% method %}
+
 {% sample lang="java" %}
 ** extraParam动态参数处理：**
 
