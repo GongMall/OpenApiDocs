@@ -45,6 +45,9 @@ extraParam的作用：
     let encodeExtraParam=encodeURIComponent(extraParam) 操作)，如原返回地址：https://www.gongmall.com/?data=1如需要返回附言参数，地址将更新为：https://www.gongmall.com/?data=1extraParam=1234
 对返回地址的动态参数extraParam解码后可正常使用（不使用动态参数）,解码方式:
 {% method %}
+{% sample lang="java" %}
+** extraParam动态参数处理：**
+
 ```
 贵司提供的返回地址uri（如https://www.gongmall.com/?data=1）拼接上&extraParam=encodeExtraParam即url=
 https://www.gongmall.com/?data=1&extraParam=encodeExtraParam，并使用decodeURIComponent(extraParam)方法进行解密即可
