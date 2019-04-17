@@ -44,7 +44,7 @@
 extraParam的作用：
     1、回调时将原样返还，可以用来做用户数据标识。
     2、如果电签成功后配置的返回地址需要加动态参数则可以作为动态参数传入(工猫对参数作：
-    let encodeExtraParam=encodeURIComponent(extraParam) 操作)，如原返回地址：https://www.example.com/?data=1如需要返回附言参数，地址将更新为：https://www.example.com/?data=1extraParam=1234
+    let encodeExtraParam=encodeURIComponent(extraParam) 操作)，如原返回地址：https://www.example.com/?data=1,如需要返回动态参数，地址将更新为：https://www.example.com/?data=1&extraParam=1234
 对返回地址的动态参数extraParam解码后可正常使用（不使用动态参数）,解码方式:
 
 {% sample lang="java" %}
