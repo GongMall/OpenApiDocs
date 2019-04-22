@@ -35,7 +35,7 @@ timestamp: 1490063145767
 processNum: wi123456789
 
 第一步：对参数按照key=value的格式，并按照参数名ASCII字典序排序如下：
-stringA="appKey=gmd930ea5d5a258f4f&nonce=76e71d31590d44f2aaa55fed6b3e267c&processNum=wi123456789&timestamp=1490059287869";
+stringA="appKey=gmd930ea5d5a258f4f&nonce=76e71d31590d44f2aaa55fed6b3e267c&processNum=wi123456789&timestamp=1490063145767";
 
 第二步：拼接API密钥：
 stringSignTemp="stringA&appSecret=192006250b4c09247ec02edce69f6a2d"
