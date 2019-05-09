@@ -27,13 +27,13 @@
 
 | 参数名 | 类型 | 说明 |
 | :--- | :--- | --- |
-| mobile| String | 手机号 |
+| mobile | String | 手机号 |
 | name | string | 姓名 |
 | identity | string | 身份证号 |
 | workNumber | string | 工号 |
 | bankAccount | string | 提现收款账号 |
 | bankName | string | 账号名称 |
-| status | string | 电签状态 |
+| status | string | 电签状态（0、未签  1、已签） |
 
 **返回示例**
 
@@ -51,7 +51,6 @@
     }
 
  }
-
 ```
 
 **备注**
