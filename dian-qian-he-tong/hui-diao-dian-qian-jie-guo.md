@@ -21,7 +21,7 @@
 | name | 是 | string | 姓名 |
 | mobile | 是 | string | 手机号 |
 | identity | 是 | string | 身份证号码 |
-| status | 是 | string | 合同状态 |
+| status | 是 | string | 合同状态（1、未签 2、已签） |
 | workNumber | 否 | string | 工号 |
 | extraParam | 否 | string | 附言参数，由传入方提供，回调时将原样返还，可以用来做用户数据标识 |
 | salaryAccount | 是 | String | 银行卡（对应电签时的bankNum） |
