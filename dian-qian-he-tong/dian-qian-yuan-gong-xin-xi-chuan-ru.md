@@ -24,8 +24,8 @@
 | identity | 是 | string | 身份证号（如果有唯一工号，使用唯一工号查询状态，此参数可以不填，否则为必填字段） | idFront | 是 |string | 身份证正面（清晰的身份证正面图片，此参数必填） |
 | idBackground | 是 |string | 身份证正面（清晰的身份证正面图片，此参数必填） |
 | salaryType | 是 | string | 收款卡类型（0：银行卡，1：支付宝） |
-| salaryAccount | 是 | string | 收款卡号（可以是银行卡号，也可以是支付宝帐号，根据公司配置进行收集） |
-| 
+| salaryAccount | 是 | string | 收款卡号（银行卡号和支付宝帐号都可以，根据公司配置进行收集） |
+| positionId | 是 | string | 职位id（公司配置的职位）|
 
 **返回参数说明**
 
