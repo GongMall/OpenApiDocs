@@ -33,11 +33,7 @@
  {
     “success”：true//签署成功
     “data” ：{
-      “contractPath ”: “https://contract-qa.gongmall.com/?companyId=DPYWkz
-&
-positionId=AVRLeM
-&
-channel=kPxJzx” //合同模版地址
+      “contractPath ”: “http://gongmall-file.oss-cn-hangzhou.aliyuncs.com/gmmanager-test/电签合同.pdf?” //合同模版地址
     }
  }
 ```
