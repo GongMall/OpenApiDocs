@@ -33,7 +33,7 @@
  {
     “success”：true//员工信息校验通过
     “data” ：{
-      “templatePath”: “https://contract-qa.gongmall.com/?companyId=DPYWkz
+      “contractPath ”: “https://contract-qa.gongmall.com/?companyId=DPYWkz
 &
 positionId=AVRLeM
 &
