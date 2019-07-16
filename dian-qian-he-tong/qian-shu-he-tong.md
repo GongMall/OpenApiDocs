@@ -31,7 +31,7 @@
 
 ```
  {
-    “success”：true//员工信息校验通过
+    “success”：true//签署成功
     “data” ：{
       “contractPath ”: “https://contract-qa.gongmall.com/?companyId=DPYWkz
 &
