@@ -39,15 +39,8 @@
  {
     “success”：true//已电签
     “data” ：{
-      “mobile”: “15246265523”, //手机号
-      “name”:“张三”,//姓名
-      “identity” :“412387199712071245” //身份证号
-      “workNumber” : “1112121212” //工号
-      “bankAccount”：“622848xxx”//提现收款账号
-      “bankName”：“xxx银行”//账号名称
-      “status”:“1”//电签状态（1：已签  0：未签）
+      “templatePath”: “https://contract-qa.gongmall.com/?companyId=DPYWkz&positionId=AVRLeM&channel=kPxJzx” //合同模版地址
     }
-
  }
 ```
 
