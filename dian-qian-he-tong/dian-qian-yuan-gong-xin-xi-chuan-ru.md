@@ -31,7 +31,7 @@
 
 | 参数名 | 类型 | 说明 |
 | :--- | :--- | --- |
-| templatePath| String | 合同模版psf文件地址 |
+| templatePath| String | 合同模版pf文件地址 |
 
 **返回示例**
 
