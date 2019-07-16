@@ -41,8 +41,8 @@
  {
     “success”：true//员工信息校验通过
     “data” ：{
-    “employeeId”: “123456”，//员工id
-      “templatePath”: “https://contract-qa.gongmall.com/?companyId=DPYWkz&positionId=AVRLeM&channel=kPxJzx” //合同模版地址
+       “employeeId”: “123456”，//员工id
+       “templatePath”: “https://contract-qa.gongmall.com/?companyId=DPYWkz&positionId=AVRLeM&channel=kPxJzx” //合同模版地址
     }
  }
 ```
