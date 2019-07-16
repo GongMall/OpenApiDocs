@@ -37,7 +37,7 @@
 
 ```
  {
-    “success”：true//已电签
+    “success”：true//员工信息校验通过
     “data” ：{
       “templatePath”: “https://contract-qa.gongmall.com/?companyId=DPYWkz&positionId=AVRLeM&channel=kPxJzx” //合同模版地址
     }
