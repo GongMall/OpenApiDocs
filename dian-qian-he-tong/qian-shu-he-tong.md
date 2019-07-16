@@ -25,7 +25,7 @@
 
 | 参数名 | 类型 | 说明 |
 | :--- | :--- | :--- |
-| templatePath | String | 合同模版pdf文件地址 |
+| contractPath | String | 签署成功合同pdf文件地址 |
 
 **返回示例**
 
