@@ -7,6 +7,8 @@
 * [异常代码](overview/yi-chang-dai-ma.md)
 * [业务代码](overview/ye-wu-dai-ma.md)
 * [app嵌入合同的一些配置](shang-chuan-shen-fen-zheng-wen-ti-jie-jue-fang-an.md)
+* \* \[回调单笔发薪结果\]\(hui-diao-fa-xin-jie-guo.md\)
+* \* \[查询单笔发薪结果\]\(yuan-gong-fa-xin-jie-guo-cha-xun.mobi\)
 
 ## 电签合同
 
@@ -15,8 +17,8 @@
 * [查询电签结果](dian-qian-he-tong/cha-xun-dian-qian-jie-guo.md)
 * [回调电签结果](dian-qian-he-tong/hui-diao-dian-qian-jie-guo.md)
 * [支持银行](zhi-chi-de-yin-xing-lie-biao.md)
-* [电签员工信息传入](dian-qian-he-tong/dian-qian-yuan-gong-xin-xi-chuan-ru.mobi)
-* [签署合同](dian-qian-he-tong/qian-shu-he-tong.mobi)
+* [电签员工信息传入](dian-qian-he-tong/dian-qian-yuan-gong-xin-xi-chuan-ru.md)
+* [签署合同](dian-qian-he-tong/qian-shu-he-tong.md)
 
 ## 实时提现
 
@@ -32,9 +34,8 @@
 
 ## 批量发薪处理
 
-* [批量上传工资单接口](dai-fa-xin-jie-kou.mobi)
-* [回调批量工资单校验信息](dui-gong-zi-dan-xin-xi-jin-xing-xiang-xi-xiao-yan-chu-li-wan-cheng-hou-hui-diao-jie-kou.mobi)
-* [查询批量工资单上传结果](pi-ci-cha-xun-gong-zi-dan-shang-chuan-jie-guo.mobi)
-* [查询单笔发薪结果](yuan-gong-fa-xin-jie-guo-cha-xun.mobi)
-* [回调单笔发薪结果](hui-diao-fa-xin-jie-guo.mobi)
+* [批量上传工资单接口](dai-fa-xin-jie-kou.md)
+* [回调批量工资单校验信息](dui-gong-zi-dan-xin-xi-jin-xing-xiang-xi-xiao-yan-chu-li-wan-cheng-hou-hui-diao-jie-kou.md)
+* [查询单笔发薪结果](yuan-gong-fa-xin-jie-guo-cha-xun.md)
+* [查询批量工资单上传结果](pi-ci-cha-xun-gong-zi-dan-shang-chuan-jie-guo.md)
 
