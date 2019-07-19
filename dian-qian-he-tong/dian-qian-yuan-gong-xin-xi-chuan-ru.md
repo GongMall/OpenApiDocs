@@ -24,7 +24,7 @@
 | identity | 是 | String | 身份证号（最大长度50）|
 | idFront | 是 | String | 身份证正面地址（地址必须可访问，此参数必填） |
 | idBackground | 是 | String | 身份证正面地址（地址必须可访问，此参数必填，此参数必填） |
-| salaryType | 是 | Integer| 收款卡类型（0：银行卡，1：支付宝）（最大长度4） |
+| salaryType | 是 | Integer| 收款卡类型（0：银行卡，1：支付宝，最大长度4） |
 | salaryAccount | 是 | String | 收款卡号（银行卡号和支付宝帐号都可以，根据公司配置进行收集，最大长度50） |
 | positionName | 是 | String | 职位名称（必须为贵公司配置的工猫平台的职位，最大长度50） |
 
