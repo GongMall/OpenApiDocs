@@ -37,7 +37,7 @@
 | name | 是 | String | 姓名（员工姓名） |
 | identity | 是 | String | 身份证号（最大长度50） |
 | contractStatus | 否 | Integer | 电签状态（0：未签，1：已签）（最大长度4） |
-| signDate | 否 | String | 姓名（员工姓名） |
+| signDate | 否 | String | 电签成功时间(yyyyMMddHHmmss) |
 | contractPath | 否 | String | 电签合同pdf地址 |
 | templatePath | 是 | String | 合同模版pdf文件地址 |
 
