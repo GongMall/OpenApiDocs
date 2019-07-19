@@ -48,7 +48,7 @@
     “success”：true//员工信息校验通过
     “msg”：“员工已存在|员工已电签|”
     “data” ：{
-       “workNumber ”: “123456”，//员工唯一标识
+       “workNumber ”: “123456”，//员工在贵公司唯一标识
        “templatePath”: “https://contract-qa.gongmall.com/?companyId=DPYWkz&positionId=AVRLeM&channel=kPxJzx” //合同模版地址
     }
  }
