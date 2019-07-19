@@ -26,7 +26,7 @@
 | :--- | :--- | :--- |
 | contractStatus | 是 | Integer | 电签状态（0：未签，1：已签） |
 | signDate | 是 | String | 电签成功时间(电签状态为已电签返回此参数，yyyy-MM-dd HH：mm：ss) |
-| contractPath | 是 | String | 电签合同pdf地址（如果电签状态为已电签返回此地址） |
+| contractPath | 是 | String | 电签合同pdf地址，阿里云地址（如果电签状态为已电签返回此地址） |
 
 
 **返回示例**
