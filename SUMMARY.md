@@ -15,8 +15,7 @@
 * [查询电签结果](dian-qian-he-tong/cha-xun-dian-qian-jie-guo.md)
 * [回调电签结果](dian-qian-he-tong/hui-diao-dian-qian-jie-guo.md)
 * [生成合同](dian-qian-he-tong/dian-qian-yuan-gong-xin-xi-chuan-ru.md)
-* [签署合同](dian-qian-he-tong/qian-shu-he-tong.md
-)
+* [签署合同](dian-qian-he-tong/qian-shu-he-tong.md)
 * [支持银行](zhi-chi-de-yin-xing-lie-biao.md)
 
 
