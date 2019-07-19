@@ -49,6 +49,10 @@
     “msg”：“员工已存在|员工已电签”
     “data” ：{
        “workNumber ”: “123456”，//员工在贵公司唯一标识
+       “mobile” ：“13563985678”，
+       “name”：“张三”，
+       “identity” ：“420381199801017857”，
+       “contractStatus” ：0，
        “templatePath”: “https://contract-qa.gongmall.com/?companyId=DPYWkz&positionId=AVRLeM&channel=kPxJzx” //合同模版地址
     }
  }
