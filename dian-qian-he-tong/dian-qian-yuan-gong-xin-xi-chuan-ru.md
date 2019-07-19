@@ -47,7 +47,7 @@
  {
     “success”：true//员工信息校验通过
     “data” ：{
-       “sourceId ”: “123456”，//员工唯一标识
+       “workNumber ”: “123456”，//员工唯一标识
        “templatePath”: “https://contract-qa.gongmall.com/?companyId=DPYWkz&positionId=AVRLeM&channel=kPxJzx” //合同模版地址
     }
  }
