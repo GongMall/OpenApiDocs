@@ -19,7 +19,7 @@
 | 参数名 | 必选 | 类型 | 说明 |
 | :--- | :--- | :--- | :--- |
 | sourceId | 是 | String | 员工唯一标识 |
-| positionName| 是 | String | 职位名称（公司配置的职位）|
+| positionName | 是 | String | 职位名称（公司配置的职位） |
 
 **返回参数说明**
 
