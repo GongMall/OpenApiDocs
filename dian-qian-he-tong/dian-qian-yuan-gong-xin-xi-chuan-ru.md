@@ -8,7 +8,7 @@
 
 **请求URL：**
 
-* /api/employee/createContract
+* /api/employeeContract/createContract
 
 **请求方式：**
 
