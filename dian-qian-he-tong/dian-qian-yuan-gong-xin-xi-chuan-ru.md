@@ -33,7 +33,12 @@
 | 参数名 | 必选 | 类型 | 说明 |
 | :--- | :--- | :--- | --- |
 | workNumber | 是 |String | 员工在贵公司唯一标识 |
-
+| mobile | 是 | String | 手机号（用于收取电签成功之后短信，此参数必填）（最大长度50） |
+| name | 是 | String | 姓名（员工姓名） |
+| identity | 是 | String | 身份证号（最大长度50）|
+| contractStatus | 否 | Integer| 电签状态（0：未签，1：已签）（最大长度4） |
+| signDate | 是 | String | 姓名（员工姓名） |
+| identity | 是 | String | 身份证号（最大长度50）|
 | templatePath | 是 | String | 合同模版pdf文件地址 |
 
 **返回示例**
