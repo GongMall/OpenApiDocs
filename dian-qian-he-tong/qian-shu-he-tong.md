@@ -24,7 +24,10 @@
 
 | 参数名 | 类型 | 说明 |
 | :--- | :--- | :--- |
-| contractPath | String | 签署成功合同pdf文件地址 |
+| contractStatus | 是 | Integer | 电签状态（0：未签，1：已签）（最大长度4） |
+| signDate | 否 | String | 电签成功时间\(电签状态为已电签返回此参数，yyyy-MM-dd HH：mm：ss) |
+| contractPath | 否 | String | 电签合同pdf地址（如果电签状态为已电签返回此地址） |
+
 
 **返回示例**
 
