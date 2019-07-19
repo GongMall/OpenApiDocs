@@ -1,4 +1,4 @@
-create### 生成合同
+### 生成合同
 
 ---
 
@@ -8,7 +8,7 @@ create### 生成合同
 
 **请求URL：**
 
-* /api/employee/saveEmployee
+* /api/employee/createContract
 
 **请求方式：**
 
