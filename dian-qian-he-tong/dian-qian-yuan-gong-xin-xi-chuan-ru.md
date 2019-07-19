@@ -4,7 +4,7 @@
 
 **简要描述：**
 
-* 员工电签信息传入
+* 生成合同
 
 **请求URL：**
 
@@ -38,8 +38,8 @@
 | identity | 是 | String | 身份证号（最大长度50） |
 | contractStatus | 否 | Integer | 电签状态（0：未签，1：已签）（最大长度4） |
 | signDate | 否 | String | 电签成功时间(yyyy-MM-dd HH：mm：ss) |
-| contractPath | 否 | String | 电签合同pdf地址 |
-| templatePath | 是 | String | 合同模版pdf文件地址 |
+| contractPath | 否 | String | 电签合同pdf地址（如果电签状态为已电签返回此地址） |
+| templatePath | 是 | String | 合同模版pdf文件地址（如果电签状态为未电签返回此地址） |
 
 **返回示例**
 
