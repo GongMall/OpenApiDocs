@@ -37,6 +37,7 @@
     “success”：true//签署成功
     “msg”：“签署成功”  
     “data” ：{
+    “workNumber” ： “123456”，
     “contractStatus”：1，//已签
     “signDate”：“2019-07-18 15：36：05”
       “contractPath ”: “http://gongmall-file.oss-cn-hangzhou.aliyuncs.com/gmmanager-test/电签合同.pdf?” //电签合同地址 
