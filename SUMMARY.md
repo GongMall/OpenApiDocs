@@ -7,7 +7,6 @@
 * [异常代码](overview/yi-chang-dai-ma.md)
 * [业务代码](overview/ye-wu-dai-ma.md)
 * [app嵌入合同的一些配置](shang-chuan-shen-fen-zheng-wen-ti-jie-jue-fang-an.md)
-* [修改用户账号v2版](xiu-gai-yong-hu-zhang-hao-v2-ban.md)
 
 ## 电签合同
 
@@ -21,7 +20,7 @@
 
 * [查询企业余额](shi-shi-ti-xian/cha-xun-qi-ye-yu-e.md)
 * [企业账户充值](qi-ye-zhang-hu-chong-zhi.md)
-* [修改员工银行卡](shi-shi-ti-xian/xiu-gai-yin-hang-ka.md)
+* [修改用户账号v2版](xiu-gai-yong-hu-zhang-hao-v2-ban.md)
 * [算税信息查询](suan-shui-xin-xi-cha-xun.md)
 * [提现转账确认回调接口](ti-xian-zhuan-zhang-que-ren-hui-diao-jie-kou.md)
 * [提现](shi-shi-ti-xian/ti-xian.md)
