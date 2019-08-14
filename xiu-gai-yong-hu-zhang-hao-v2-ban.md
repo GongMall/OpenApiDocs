@@ -31,7 +31,7 @@
 | name | String | 姓名（长度不超过50位）|
 | mobile |String | 手机号（长度为11位）|
 | identity | String | 身份证号（长度为18位） |
-| bankName| String| 账号名称） |
+| bankName| String| 账号名称 |
 | bankAccount | String | 账号（支持支付宝、银行卡账号，长度不超过50位） |
 
 
