@@ -27,6 +27,9 @@
 | currentTax| 是 | string | 当次缴纳个税 |
 | currentRealWage | 是 | string | 实发金额 |
 | currentManageFee | 是 | string | 当次提现管理费 |
+| addTaxBearType| 是 | string | 增值税附加税承担方式（0:公司 1:个人） |
+| currentAddTax| 是 | string | 当次提现附加税 |
+| currentAddValueTax| 是 | string | 当次提现增值税 |
 | identity | 是 | string | 身份证号码 |
 | bankName | 是 | string | 银行名称 |
 | bankAccount | 是 | string | 银行卡 |
