@@ -315,4 +315,18 @@ loadRequest需要在在viewDidLoad内调用
 ```
 
 
+**ios 遇到页面变形问题：**
+
+```
+- 问题描述
+  ios加载时，页面变形 ：
+
+解决方法：      
+建议使用UIWebView 加载，并设置 webView.scalesPageToFit = YES;.
+```
+
+
+
+
+
 
