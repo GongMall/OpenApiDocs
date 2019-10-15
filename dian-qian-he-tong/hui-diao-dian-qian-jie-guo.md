@@ -29,8 +29,18 @@
 
 **返回参数说明**
 
-已成功接收:请返回json格式的任何结果，非空即可.
-如接受失败或者其他任何原因导致的回调失败，请不要返回任何结果，包括“error、fail”等，请返回null;
+回调response
+结果（status=200 && isNotEmpty(responseBody)）为成功，
+其他情况（status !=200 || isEmpty(responseBody))为失败
+**返回示例**
+成功：
+
+```
+{
+    “success”：true
+}
+```
+
 
 **备注**
 
