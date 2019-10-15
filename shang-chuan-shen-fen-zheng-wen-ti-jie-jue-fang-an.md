@@ -6,7 +6,7 @@
 
 * 业务背景
 
-    客户对接电签业务时，会出现上传身份证及手机适配问题，给客户技术带来困扰，工猫视客户为上帝，特为客户推出完美解决方案，为客户解决问题。
+  客户对接电签业务时，会出现上传身份证及手机适配问题，给客户技术带来困扰，工猫视客户为上帝，特为客户推出完美解决方案，为客户解决问题。
 
 **基于App嵌套电签上传身份证及查看合同的问题解决方案：**
 
@@ -14,7 +14,7 @@
 - 问题描述 
     1、出现身份证不能上传的问题： 点击H5中 input type="file" 标签，不能打开android资源管理器，因为 android webview 由于考虑安全原因屏蔽了 input type="file" 这个功能，需要做如下配置方可使用。
     2、查看合同时手机兼容性问题：webview嵌入h5合同页面会产生一些兼容问题，需要做如下配置。
-    
+
 - 解决方案 
 import android.annotation.TargetApi;
 import android.app.AlertDialog;
@@ -301,7 +301,6 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
     }
 }
-
 ```
 
 **ios app选择图片的问题：**
@@ -314,7 +313,6 @@ public class MainActivity extends AppCompatActivity {
 loadRequest需要在在viewDidLoad内调用
 ```
 
-
 **ios 遇到页面变形问题：**
 
 ```
@@ -324,9 +322,6 @@ loadRequest需要在在viewDidLoad内调用
 解决方法：      
 建议使用UIWebView 加载，并设置 webView.scalesPageToFit = YES;.
 ```
-
-
-
 
 
 

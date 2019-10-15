@@ -28,3 +28,10 @@
 * [查询单笔提现结果](shi-shi-ti-xian/cha-xun-ti-xian-jie-guo.md)
 * [回调提现结果](shi-shi-ti-xian/ti-xian-jie-guo-hui-diao.md)
 
+## 收单
+
+* 即时到账
+* 查询子商户列表
+
+
+
