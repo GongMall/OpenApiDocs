@@ -18,10 +18,7 @@
 
 | 参数名 | 必选 | 类型 | 说明 |
 | :--- | :--- | :--- | :--- |
-| name | 是 | string | 员工姓名 |
-| mobile | 是 | String | 员工手机号码 |
-| identity | 是 | String | 员工身份证号码 |
-| occurMonth | 否 | String | 提现月份（yyyy-MM）,若不传，查询月份所有记录 |
+| merchantName | 否 | string | 根据子商户名称模糊查询 |
 | pageSize | 否 | int | 每页显示数（默认值为10） |
 | currentPage | 否 | int | 当前页数（默认为1） |
 
@@ -29,12 +26,15 @@
 
 | 参数名 | 类型 | 说明 |
 | :--- | :--- | :--- |
-| total | int | 提现总数 |
-| totalPage | int | 提现记录页数 |
+| total | int | 总数 |
+| totalPage | int | 总页数 |
 | pageSize | int | 每页展示数 |
 | currentPage | int | 当前页码 |
-| occurMonth | string | 提现月份 |
-| list | List | 提现记录 |
+| merchants | json | 子商户列表 |
+
+
+
+
 
 **返回示例**
 
@@ -52,13 +52,11 @@
 
 “list”：{
 
-“requestId”: ”12304” ,//客户请求标识
+“merchantId”: ”12304” ,//子商户Id
 
-“status”: 2 ,//失败
+“merchantName”: ”子商户名称” //子商户名称
 
-“failReason”: ”企业余额不足” //失败原因
-
-“mobile”：“18500615259”，//手机号
+“registerStatus”：“18500615259”，//审核状态
 
 “employeeName”：“王鑫鑫”，//姓名
 
