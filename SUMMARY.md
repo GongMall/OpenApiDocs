@@ -31,6 +31,6 @@
 ## 收单
 
 * [即时到账](shou-dan/ji-shi-dao-zhang.md)
-* 查询子商户列表
-* 即时到账回调
+* [查询子商户列表](shou-dan/cha-xun-zi-shang-hu-lie-biao.md)
+* [即时到账回调](shou-dan/ji-shi-dao-zhang-hui-diao.md)
 
