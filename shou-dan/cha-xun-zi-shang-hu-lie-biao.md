@@ -4,7 +4,7 @@
 
 **简要描述：**
 
-* B端商户平台查询该企业在工猫平台注册的子商户
+* B端商户平台查询该企业在工猫平台注册成功的子商户
 
 **请求URL：**
 
@@ -30,9 +30,16 @@
 | totalPage | int | 总页数 |
 | pageSize | int | 每页展示数 |
 | currentPage | int | 当前页码 |
-| merchants | json | 子商户列表 |
+| merchants | json（列表） | 子商户列表 |
 
 
+
+merchants**参数说明**
+
+| 参数名 | 类型 | 说明 |
+| :--- | :--- | :--- |
+| merchantId | int | 子商户Id |
+| merchantName | int | 子商户名称 |
 
 
 
@@ -50,25 +57,11 @@
 
 “occurMonth”：2018-07，
 
-“list”：{
+“merchants”：{
 
 “merchantId”: ”12304” ,//子商户Id
 
 “merchantName”: ”子商户名称” //子商户名称
-
-“registerStatus”：“18500615259”，//审核状态
-
-“employeeName”：“王鑫鑫”，//姓名
-
-“amount”：“1000”//提现金额
-
-“idNumber”：“620902198909280125”,//身份证号
-
-“salaryAccount”：“6214830100799682”//银行卡号
-
-“dateTime”：“2016-01-25 13:25:56”//申请时间
-
-“payDate”：“2016-01-25 13:25:56”//实际付款时间
 
 }
 
