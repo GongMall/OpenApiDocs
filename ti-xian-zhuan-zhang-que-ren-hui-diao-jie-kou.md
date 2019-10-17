@@ -32,24 +32,22 @@
 | 参数名 | 必选 | 类型 | 说明 |
 | :--- | :--- | :--- | --- |
 | requestId | 是 | string | 客户请求标识，最长32位（用户提现时企业系统自动生成，每个requestId代表一个提现请求，工猫作为每笔提现记录的唯一标识） |
-| status | 是 | Integer| 此笔请求是否有效（1：有效  2：无效） |
+| status | 是 | Integer | 此笔请求是否有效（1：有效  2：无效） |
 
-**返回示例**
+**返回示例**  
 请返回json格式的结果。
 
 ```
-
 有效示例：
 {
-	"requestId": "123",//提现请求标识
-	"status": 1  //此笔请求有效，提交银行正常进行转账 
+    "requestId": "123",//提现请求标识
+    "status": 1  //此笔请求有效，提交银行正常进行转账 
 }
 无效示例：
 {
-	"requestId": "123",//提现请求标识
-	"status": 2  //此笔请求无效，通过提现结果回调处理，回调提现结果（https://opendoc.gongmall.com/shi-shi-ti-xian/ti-xian-jie-guo-hui-diao.html回调提现结果失败，回调状态status=2）
+    "requestId": "123",//提现请求标识
+    "status": 2  //此笔请求无效，通过提现结果回调处理，回调提现结果（https://opendoc.gongmall.com/shi-shi-ti-xian/ti-xian-jie-guo-hui-diao.html回调提现结果失败，回调状态status=2）
 }
-
 ```
 
 **备注**
