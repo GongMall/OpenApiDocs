@@ -32,16 +32,12 @@
 | currentPage | int | 当前页码 |
 | merchants | json（列表） | 子商户列表 |
 
-
-
 merchants**参数说明**
 
 | 参数名 | 类型 | 说明 |
 | :--- | :--- | :--- |
 | merchantId | int | 子商户Id |
 | merchantName | int | 子商户名称 |
-
-
 
 **返回示例**
 
@@ -57,13 +53,13 @@ merchants**参数说明**
 
 “occurMonth”：2018-07，
 
-“merchants”：{
+“merchants”：\[{
 
 “merchantId”: ”12304” ,//子商户Id
 
 “merchantName”: ”子商户名称” //子商户名称
 
-}
+}\]
 
 }
 
