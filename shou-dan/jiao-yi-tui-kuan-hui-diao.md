@@ -8,7 +8,7 @@
 
 **请求URL：**
 
-* `开发者信息提供的实时提现结果回调地址`
+* `开发者信息提供的交易退款回调地址`
 
 **请求方式：**
 
@@ -18,18 +18,18 @@
 
 | 参数名 | 必选 | 类型 | 说明 |
 | :--- | :--- | :--- | :--- |
-| out\_trade\_no | 是 | string | 商户订单号 |
+| orig\_outer\_trade\_no | 是 | string | 原商户订单号，需要针对该笔订单发起退款 |
+| out\_trade\_no | 是 | string | 商户退款订单号 |
 | inner\_trade\_no | 是 | string | 平台订单号 |
-| trade\_status | 是 | string | 交易状态 |
-| trade\_amount | 是 | string | 交易金额 |
-| gmt\_payment | 否 | string | 交易支付时间 |
-| gmt\_close | 否 | string | 交易关闭时间 |
-| failReason | 否 | string | 交易失败原因 |
+| refund\_status | 是 | string | 退款状态 |
+| refund\_amount | 是 | string | 退款金额 |
+| gmt\_refund | 否 | string | 退款时间，只有交易成功该字段才有值 |
 
 **返回参数说明**
 
 | 参数名 | 类型 | 说明 |
 | :--- | :--- | :--- |
+| orig\_outer\_trade\_no | string | 原商户订单号，需要针对该笔订单发起退款 |
 | out\_trade\_no | string | 商户订单号 |
 | inner\_trade\_no | string | 平台订单号 |
 | status | int | 1处理成功，2处理失败 |
@@ -38,7 +38,9 @@
 
 {
 
-“out\_trade\_no”："20191017001"，
+“orig\_outer\_trade\_no”："20191017001"，
+
+“out\_trade\_no”："201910170001"，
 
 “inner\_trade\_no”："20191017000001"，
 
