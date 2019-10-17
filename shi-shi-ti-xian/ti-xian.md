@@ -18,7 +18,7 @@
 
 | 参数名 | 必选 | 类型 | 说明 |
 | :--- | :--- | :--- | --- |
-| requestId | 是 | string | 客户请求标识,最长32位(用户提现时企业系统自动生成，每个requestId代表一个提现请求，工猫作为每笔提现记录的唯一标识) |
+| requestId | 是 | string | 客户请求标识,最长32位\(用户提现时企业系统自动生成，每个requestId代表一个提现请求，工猫作为每笔提现记录的唯一标识\) |
 | mobile | 否 | string | 手机号 |
 | name | 是 | string | 姓名 |
 | amount | 是 | BigDecimal | 提现金额 |
