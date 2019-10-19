@@ -20,7 +20,7 @@
 | :--- | :--- | :--- | :--- |
 | out\_trade\_no | 是 | string | 商户订单号 |
 | inner\_trade\_no | 是 | string | 平台订单号 |
-| trade\_status | 是 | string | 交易状态 |
+| trade\_status | 是 | string | 交易状态，TRADE\_SUCCESS 交易支付成功，TRANSFER\_FAIL 交易失败，TRADE\_CLOSED 交易关闭 |
 | trade\_amount | 是 | string | 交易金额 |
 | gmt\_payment | 否 | string | 交易支付时间 |
 | gmt\_close | 否 | string | 交易关闭时间 |
