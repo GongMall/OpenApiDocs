@@ -35,12 +35,6 @@
 
 {
 
-“orig\_outer\_trade\_no”："20191017001"，
-
-“out\_trade\_no”："201910170001"，
-
-“inner\_trade\_no”："20191017000001"，
-
 “status” ：1
 
 }
