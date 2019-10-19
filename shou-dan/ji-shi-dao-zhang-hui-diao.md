@@ -30,17 +30,11 @@
 
 | 参数名 | 类型 | 说明 |
 | :--- | :--- | :--- |
-| out\_trade\_no | string | 商户订单号 |
-| inner\_trade\_no | string | 平台订单号 |
 | status | int | 1处理成功，2处理失败 |
 
 **返回示例**
 
 {
-
-“out\_trade\_no”："20191017001"，
-
-“inner\_trade\_no”："20191017000001"，
 
 “status” ：1
 
