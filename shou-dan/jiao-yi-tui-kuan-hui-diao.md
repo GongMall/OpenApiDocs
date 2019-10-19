@@ -29,9 +29,6 @@
 
 | 参数名 | 类型 | 说明 |
 | :--- | :--- | :--- |
-| orig\_outer\_trade\_no | string | 原商户订单号，需要针对该笔订单发起退款 |
-| out\_trade\_no | string | 商户订单号 |
-| inner\_trade\_no | string | 平台订单号 |
 | status | int | 1处理成功，2处理失败 |
 
 **返回示例**
