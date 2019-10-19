@@ -21,7 +21,8 @@
 | orig\_outer\_trade\_no | 是 | string | 原商户订单号，需要针对该笔订单发起退款 |
 | out\_trade\_no | 是 | string | 商户退款订单号 |
 | inner\_trade\_no | 是 | string | 平台订单号 |
-| refund\_status | 是 | string | 退款状态 |
+| refund\_status | 是 | string | 退款状态，REFUND\_SUCCESS 退款成功，REFUND\_FAIL退款失败 |
+|  |  |  |  |
 | refund\_amount | 是 | string | 退款金额 |
 | gmt\_refund | 否 | string | 退款时间，只有交易成功该字段才有值 |
 
