@@ -8,7 +8,7 @@
 
 **请求URL：**
 
-* /api/instant/trade
+* /api/instant/merchants
 
 **请求方式：**
 
