@@ -50,8 +50,6 @@ merchants**参数说明**
 
 "currentPage"：1，
 
-“occurMonth”：2018-07，
-
 “merchants”：\[{
 
 “merchantId”: ”12304” ,//子商户Id
