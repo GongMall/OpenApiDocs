@@ -8,7 +8,7 @@
 
 **请求URL：**
 
-* /api/instant/merchants
+* /api/company/merchants
 
 **请求方式：**
 
