@@ -18,29 +18,27 @@
 
 | 参数名 | 必选 | 类型 | 说明 |
 | :--- | :--- | :--- | --- |
-| name | 是 | String | 姓名（长度不超过50位）|
-| mobile | 是 | String | 手机号（长度为11位）|
+| name | 是 | String | 姓名（长度不超过50位） |
+| mobile | 是 | String | 手机号（长度为11位） |
 | identity | 是 | String | 身份证号（长度为18位） |
-| salaryType | 是 | Integer| 账号类型（0:银行卡  1:支付宝,由于支付宝账号无法校验，若更换支付宝账号时，请务必确认清楚） |
+| salaryType | 是 | Integer | 账号类型（0:银行卡  1:支付宝,由于支付宝账号无法校验，若更换支付宝账号时，请务必确认清楚） |
 | bankAccount | 是 | String | 账号（支持支付宝、银行卡账号，长度不超过50位） |
 
 **返回参数说明**
 
 | 参数名 | 类型 | 说明 |
 | :--- | :--- | --- |
-| name | String | 姓名（长度不超过50位）|
-| mobile |String | 手机号（长度为11位）|
+| name | String | 姓名（长度不超过50位） |
+| mobile | String | 手机号（长度为11位） |
 | identity | String | 身份证号（长度为18位） |
-| bankName| String| 账号名称 |
+| bankName | String | 账号名称 |
 | bankAccount | String | 账号（支持支付宝、银行卡账号，长度不超过50位） |
-
-
 
 **返回示例**
 
 ```
  {
-	“success”：true//更换成功
+    “success”：true//更换成功
         “data” ：{
                “mobile”: “15246265523”, //手机号
                “name”:“张三”,//姓名
@@ -49,7 +47,6 @@
                “bankName” : “中国银行” //账号名称
         }
  }
-
 ```
 
 **备注**
