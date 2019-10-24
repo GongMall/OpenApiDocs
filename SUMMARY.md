@@ -14,9 +14,9 @@
 * [查询电签结果](dian-qian-he-tong/cha-xun-dian-qian-jie-guo.md)
 * [回调电签结果](dian-qian-he-tong/hui-diao-dian-qian-jie-guo.md)
 * [支持银行](zhi-chi-de-yin-xing-lie-biao.md)
-* [提交合同信息](dian-qian-he-tong/ti-jiao-he-tong-xin-xi.md)
-* [短信签约](dian-qian-he-tong/duan-xin-qian-yue.md)
 * [API电签交互图](dian-qian-he-tong/apidian-qian-liu-cheng-tu.md)
+* [API电签-提交合同信息](dian-qian-he-tong/ti-jiao-he-tong-xin-xi.md)
+* [API电签-短信签约](dian-qian-he-tong/duan-xin-qian-yue.md)
 
 ## 实时提现
 
