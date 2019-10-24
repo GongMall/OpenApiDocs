@@ -1,6 +1,3 @@
-**接口电签交互图**  
-![](https://www.showdoc.cc/server/api/common/visitfile/sign/737b8da699d88b625eb3e6d2efbc03d2?showdoc=.jpg)
-
 **简要描述：**
 
 * 贵司提交客户合同参数到工猫，工猫将客户合同参数入库后发送短信给客户。如提交相同姓名和身份证在已有合同的情况下，共享一份合同，且合同状态一致。
