@@ -83,9 +83,9 @@ payMethod支付方式参数
 
 {
 
-```
-"bizProductCode": "20701",
+   "bizProductCode": "20701",
 
+```
 "payMethod": {
 
     "amount": "122.89",
@@ -131,8 +131,6 @@ payMethod支付方式参数
         "subject": "商品的标题",
 
         "totalAmount": "33.69"
-
-    }
 
 }]
 ```
