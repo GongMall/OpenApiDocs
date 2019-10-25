@@ -61,6 +61,7 @@ royaltyInfo分润账号信息参数
  {
     "success"：true，
      "data" ：{
+            "requestId " : "Req20191017001",
             "outTradeNo": "201910170001",
             "status": "P",
             "tradeNo": "2019101700000001"
