@@ -41,7 +41,19 @@ royaltyInfo分润账号信息参数
 | payeeMemberId | 是 | string | 分账会员ID |
 | amount | 是 | string | 分账金额 ，取值范围为\[0.01 ，100000000000.00\]，精确到小数点后两位。 |
 
+**请求参数bizContent的格式示例**
 
+{
+	"requestId": "Req201910250001",
+	"outTradeNo": "Out201910250001",
+	"origOutTradeNo": "Ori201910250001",
+	"refundAmount": "45.67",
+	"currency": "CNY",
+	"royaltyInfo": [{
+		"amount": "12.34",
+		"payeeMemberId": "123456"
+	}]
+}
 
 **返回参数说明**
 
