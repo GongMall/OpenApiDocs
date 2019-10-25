@@ -23,6 +23,18 @@
 | origOutTradeNo | 是 | string | 原始订单号，针对该订单发起退款 |
 | refundAmount | 是 | string | 退款金额，15位以内最大保留 2 位精度数字，支持部分退款，退款金额不能大于交易金额。如：50.00 |
 | currency | 否 | string | 币种，默认人民币 CNY |
+| royaltyInfo | 否 | json（列表） | 分润账号集，最多支持 10 个分润账号 |
+
+
+
+royaltyInfo分润账号信息参数
+
+| 参数名 | 必选 | 类型 | 说明 |
+| :--- | :--- | :--- | --- |
+| payeeMemberId | 是 | string | 分账会员ID |
+| amount | 是 | string | 分账金额 ，取值范围为\[0.01 ，100000000000.00\]，精确到小数点后两位。 |
+
+
 
 **返回参数说明**
 
