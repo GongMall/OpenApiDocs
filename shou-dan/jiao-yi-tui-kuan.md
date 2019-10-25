@@ -44,15 +44,15 @@ royaltyInfo分润账号信息参数
 **请求参数bizContent的格式示例**
 
 {
-	"requestId": "Req201910250001",
-	"outTradeNo": "Out201910250001",
-	"origOutTradeNo": "Ori201910250001",
-	"refundAmount": "45.67",
-	"currency": "CNY",
-	"royaltyInfo": [{
-		"amount": "12.34",
-		"payeeMemberId": "123456"
-	}]
+   "requestId": "Req201910250001",
+   "outTradeNo": "Out201910250001",
+   "origOutTradeNo": "Ori201910250001",
+   "refundAmount": "45.67",
+   "currency": "CNY",
+   "royaltyInfo": [{
+	"amount": "12.34",
+	"payeeMemberId": "123456"
+   }]
 }
 
 **返回参数说明**
