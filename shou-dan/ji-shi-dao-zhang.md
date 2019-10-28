@@ -20,7 +20,6 @@
 | :--- | :--- | :--- | --- |
 | bizContent | 是 | json格式 | 订单信息 |
 
-
 **业务参数bizContent格式：**
 
 | 参数名 | 必选 | 类型 | 说明 |
@@ -66,9 +65,9 @@ payMethod支付方式参数
 | payProductCode | 是 | string | 支付产品码，64表示主扫-借记卡，65表示主扫-综合，只需要填写产品码，例如65 |
 | amount | 是 | string | 应付金额， 取值范围为\[0.01 ，100000000000.00\]，精确到小数点后两位。 |
 | targetOrganization | 是 | string | 目标机构, WECHAT:微信, ALIPAY:支付宝, UPOP:银联 |
-| appId | 是 | string | 公众号appid，请填写已进件成功的APP\_ID。若以平台方名义进件，请填写平台方APP\_ID |
-| openId | 是 | string | 微信用户标识必填 |
-| buyerId | 是 | string | 支付宝用户标识必填 |
+| appId | 否 | string | 公众号appid，请填写已进件成功的APP\_ID。若以平台方名义进件，请填写平台方APP\_ID |
+| openId | 否 | string | 微信用户标识必填 |
+| buyerId | 否 | string | 支付宝用户标识必填 |
 
 **返回参数说明**
 
@@ -84,7 +83,7 @@ payMethod支付方式参数
 
 {
 
-   "bizProductCode": "20701",
+"bizProductCode": "20701",
 
 ```
 "payMethod": {
