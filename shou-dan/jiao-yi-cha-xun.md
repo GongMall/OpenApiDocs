@@ -25,19 +25,19 @@
 
 | 参数名 | 是否必填 | 类型 | 说明 |
 | :--- | :--- | :--- | :--- |
-| outTradeNo |  | string | 商户订单号 |
-| tradeNo |  | string | 平台订单号 |
-| subject |  | string | 商品名称，商品的标题/交易标题/订单标题/订单关键字等 |
-| price |  | string | 商 品 单 价 ， 取 值 范 围 为 \[0.01 ，100000000000.00\]，精确到小数点后两位 |
-| quantity |  | string | 商品数量必须为大于0的整数 |
-| totalAmount |  | string | 交易金额=\(商品单价×商品数量\)，取值范围为\[0.01 ，100000000000.00\]，精确到小数点后两位。 |
-| payeeIdentity |  | string | 卖家会员 ID |
-| payeeName |  | string | 卖家会员名称 |
-| partnerFee|  | string | 平台手续费 |
-| payeeFee |  | string | 卖家手续费 |
-| payerFee |  | string | 买家手续费 |
-| status | string | 交易状态 |
-| royaltyInfo |  | json（列表） | 分润账号集，最多支持 10 个分润账号 |
+| outTradeNo | 是 | string | 商户订单号 |
+| tradeNo | 是 | string | 平台订单号 |
+| subject | 是 | string | 商品名称，商品的标题/交易标题/订单标题/订单关键字等 |
+| price | 是 | string | 商 品 单 价 ， 取 值 范 围 为 \[0.01 ，100000000000.00\]，精确到小数点后两位 |
+| quantity | 是 | string | 商品数量必须为大于0的整数 |
+| totalAmount | 是 | string | 交易金额=\(商品单价×商品数量\)，取值范围为\[0.01 ，100000000000.00\]，精确到小数点后两位。 |
+| payeeIdentity | 是 | string | 卖家会员 ID |
+| payeeName | 是 | string | 卖家会员名称 |
+| partnerFee | 否 | string | 平台手续费 |
+| payeeFee | 否 | string | 卖家手续费 |
+| payerFee | 否 | string | 买家手续费 |
+| status | 是 | string | 交易状态 |
+| royaltyInfo | 否 | json（列表） | 分润账号集，最多支持 10 个分润账号 |
 
 royaltyInfo分润账号信息参数
 
@@ -46,8 +46,6 @@ royaltyInfo分润账号信息参数
 | payeeMemberId | 是 | string | 分账会员ID |
 | payeeName | 是 | string | 分账会员名称 |
 | amount | 是 | string | 分账金额 ，取值范围为\[0.01 ，100000000000.00\]，精确到小数点后两位。 |
-
-
 
 请求参数bizContent的格式示例
 
