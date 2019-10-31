@@ -47,83 +47,33 @@ royaltyInfo分润账号信息参数
 | payeeName | 是 | string | 分账会员名称 |
 | amount | 是 | string | 分账金额 ，取值范围为\[0.01 ，100000000000.00\]，精确到小数点后两位。 |
 
-请求参数bizContent的格式示例
+**返回参数格式示例**
 
 {
 
-"bizProductCode": "20701",
+	"outTradeNo": "201910170001",
 
-```
-"payMethod": {
+	"payeeIdentity": "100",
 
-    "amount": "122.89",
+	"price": "11.23",
 
-    "payProductCode": "65",
+	"quantity": "3",
 
-    "targetOrganization": "WECHAT"
+	"royaltyInfo": [{
 
-},
+		"amount": "12.45",
 
-"payerIp": "11.22.33.44",
+		"payeeIdentityType": "1",
 
-"terminalInfo": {
+		"payeeMemberId": "1000"
 
-    "terminal_type": "01"
+	}],
 
-},
+	"subject": "商品的标题",
 
-"timeoutExpress": "30m",
-
-"tradeInfo": [{
-
-        "currency": "",
-
-        "outTradeNo": "201910170001",
-
-        "payeeIdentity": "100",
-
-        "price": "11.23",
-
-        "quantity": "3",
-
-        "royaltyInfo": [{
-
-            "amount": "12.45",
-
-            "payeeIdentityType": "1",
-
-            "payeeMemberId": "1000"
-
-        }],
-
-        "subject": "商品的标题",
-
-        "totalAmount": "33.69"
-
-}]
-```
-
+	"totalAmount": "33.69"
 }
 
-**返回示例**
-
-```
- {
-    "success"：true，
-     "data" ：{
-        "returnUrl": "weixin://wxpay/bizpayurl?pr=fEyU393",
-        "tradeResList": [{
-            "outTradeNo": "201910170001",
-            "status": "P",
-            "tradeNo": "2019101700000001"
-        }, {
-            "outTradeNo": "201910170001",
-            "status": "P",
-            "tradeNo": "2019101700000001"
-        }]
-    }
-}
-```
 
 **备注**
 
