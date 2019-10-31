@@ -50,28 +50,23 @@ royaltyInfo分润账号信息参数
 **返回参数格式示例**
 
 {
-
 	"outTradeNo": "201910170001",
-
-	"payeeIdentity": "100",
-
-	"price": "11.23",
-
-	"quantity": "3",
-
-	"royaltyInfo": [{
-
-		"amount": "12.45",
-
-		"payeeIdentityType": "1",
-
-		"payeeMemberId": "1000"
-
-	}],
-
+	"tradeNo": "P201910170001",
 	"subject": "商品的标题",
-
-	"totalAmount": "33.69"
+	"totalAmount": "33.69",
+	"payeeIdentity": "100",
+	"payeeName": "收单方姓名",
+	"partnerFee": "0.00",
+	"payeeFee": "0.50",
+	"payerFee": "0.00",
+	"status": "待付款",
+	"price": "11.23",
+	"quantity": "3",
+	"royaltyInfo": [{
+		"amount": "12.45",
+		"payeeName": "分账方姓名",
+		"payeeMemberId": "1000"
+	}]
 }
 
 
