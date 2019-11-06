@@ -32,13 +32,13 @@
 | timeoutExpress | 否 | string | 逾期时间，取值范围：0或10m～7d。m-分钟，h-小时，d-天。 |
 | terminalInfo | 是 | json | 终端信息域，terminal\_type终端类型 |
 
-terminalInfo终端信息域参数
+**terminalInfo终端信息域参数**
 
 | 参数名 | 必选 | 类型 | 说明 |
 | :--- | :--- | :--- | --- |
 | terminal\_type | 是 | string | 终端类型，00-电脑，01-手机，02-平板设备，03-可穿戴设备，04-数字电视，99-其他，只需要填写类型的代码，例如01 |
 
-tradeInfo交易信息参数
+**tradeInfo交易信息参数**
 
 | 参数名 | 必选 | 类型 | 说明 |
 | :--- | :--- | :--- | --- |
@@ -51,14 +51,14 @@ tradeInfo交易信息参数
 | payeeIdentity | 是 | string | 卖家会员 ID |
 | royaltyInfo | 否 | json（列表） | 分润账号集，最多支持 10 个分润账号 |
 
-royaltyInfo分润账号信息参数
+**royaltyInfo分润账号信息参数**
 
 | 参数名 | 必选 | 类型 | 说明 |
 | :--- | :--- | :--- | --- |
 | payeeMemberId | 是 | string | 分账会员ID |
 | amount | 是 | string | 分账金额 ，取值范围为\[0.01 ，100000000000.00\]，精确到小数点后两位。 |
 
-payMethod支付方式参数
+**payMethod支付方式参数**
 
 | 参数名 | 必选 | 类型 | 说明 |
 | :--- | :--- | :--- | --- |
@@ -75,6 +75,20 @@ payMethod支付方式参数
 | :--- | :--- | --- |
 | requestId | string | 客户请求标识 |
 | returnUrl | string | 扫码的url地址 |
+| tradeResList| string | json（列表） |
+| appId| string  | 微信公众号ID，供JSAPI调用字段|
+| nonceStr| string | 随机字符串，供JSAPI调用字段|
+| timeStamp| string | 时间戳，供JSAPI调用字段 |
+| prepayId| string | 预支付交易会话标识，预支付会话标识，该值有效期为20分钟，供JSAPI调用|
+| extPackage| string | 订单详情扩展字符串，供JSAPI调用字段，对应微信接口中的package字段|
+| signType| string | 签名，供JSAPI调用字段|
+| paySign| string | 签名，供JSAPI调用字段|
+| instAmount| string | 订单金额 |
+
+**tradeResList参数**
+
+| 参数名 | 类型 | 说明 |
+| :--- | :--- | --- |
 | outTradeNo | string | 商户订单号 |
 | tradeNo | string | 平台订单号 |
 | status | string | 处理状态，S-成功，P-处理中，F-失败 |
