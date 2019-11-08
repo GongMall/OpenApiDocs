@@ -17,6 +17,8 @@
 * [API电签交互图](dian-qian-he-tong/apidian-qian-liu-cheng-tu.md)
 * [API电签-身份证附件上传](dian-qian-he-tong/ti-jiao-he-tong-xin-xi.md)
 * [API电签-同步用户信息](dian-qian-he-tong/duan-xin-qian-yue.md)
+* [API电签-获取意愿认证口令](dian-qian-he-tong/apidian-7b7e-huo-qu-yi-yuan-ren-zheng-kou-ling.md)
+* API电签-电签业务受理
 
 ## 实时提现
 
