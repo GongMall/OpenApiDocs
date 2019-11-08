@@ -16,7 +16,7 @@
 * [支持银行](zhi-chi-de-yin-xing-lie-biao.md)
 * [API电签交互图](dian-qian-he-tong/apidian-qian-liu-cheng-tu.md)
 * [API电签-身份证附件上传](dian-qian-he-tong/ti-jiao-he-tong-xin-xi.md)
-* [API电签-短信签约](dian-qian-he-tong/duan-xin-qian-yue.md)
+* [API电签-同步用户信息](dian-qian-he-tong/duan-xin-qian-yue.md)
 
 ## 实时提现
 
