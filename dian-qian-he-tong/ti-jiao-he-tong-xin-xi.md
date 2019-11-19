@@ -23,6 +23,8 @@
 | identityFrontBase64 | 是 | String | 证件正面图片base64（个人信息面） |
 | identityBackgroundBase64 | 是 | String | 证件反面图片base64（国徽面） |
 
+**注：图片base64字串原样输出即可，不需要进行任何编码处理。同时支持带data:image/jpeg;base64,等图片相关前缀。**
+
 **返回示例**
 
 ```
