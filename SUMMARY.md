@@ -40,5 +40,4 @@
 * [即时到账回调](shou-dan/ji-shi-dao-zhang-hui-diao.md)
 * [交易退款回调](shou-dan/jiao-yi-tui-kuan-hui-diao.md)
 * [交易查询](shou-dan/jiao-yi-cha-xun.md)
-* [子商户提现](shou-dan/zi-shang-hu-ti-xian.md)
 
