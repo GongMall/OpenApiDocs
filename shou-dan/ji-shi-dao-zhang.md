@@ -29,6 +29,7 @@
 | payerIp | 是 | string | 买家ip地址 |
 | payMethod | 是 | json | 支付方式，根据不同的业务场景选择合适的支付方式 |
 | bizProductCode | 是 | string | 业务产品码，20701（即时到账-先分账后结算） |
+| cashierType| 是 | string | 收银台类型，API（接口形式），SDK（app集成sdk模式） |
 | timeoutExpress | 否 | string | 逾期时间，取值范围：0或10m～7d。m-分钟，h-小时，d-天。 |
 | terminalInfo | 是 | json | 终端信息域，terminal\_type终端类型 |
 
