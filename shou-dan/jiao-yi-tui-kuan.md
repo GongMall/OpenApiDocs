@@ -20,7 +20,6 @@
 | :--- | :--- | :--- | --- |
 | bizContent | 是 | json格式 | 退款订单信息 |
 
-
 **业务参数bizContent格式：**
 
 | 参数名 | 必选 | 类型 | 说明 |
@@ -32,8 +31,6 @@
 | currency | 否 | string | 币种，默认人民币 CNY |
 | royaltyInfo | 否 | json（列表） | 分润账号集，最多支持 10 个分润账号 |
 
-
-
 royaltyInfo分润账号信息参数
 
 | 参数名 | 必选 | 类型 | 说明 |
@@ -42,8 +39,8 @@ royaltyInfo分润账号信息参数
 | amount | 是 | string | 分账金额 ，取值范围为\[0.01 ，100000000000.00\]，精确到小数点后两位。 |
 
 **请求参数bizContent的格式示例**
-```
 
+```
 {
    "requestId": "Req201910250001",
    "outTradeNo": "Out201910250001",
@@ -51,12 +48,11 @@ royaltyInfo分润账号信息参数
    "refundAmount": "45.67",
    "currency": "CNY",
    "royaltyInfo": [{
-	"amount": "12.34",
-	"payeeMemberId": "123456"
+    "amount": "12.34",
+    "payeeMemberId": "123456"
    }]
 }
 ```
-
 
 **返回参数说明**
 
@@ -67,10 +63,7 @@ royaltyInfo分润账号信息参数
 | tradeNo | string | 平台订单号 |
 | status | string | 处理状态，S-受理成功，P-处理中，F-失败 |
 
-
-
 **返回示例**
-
 
 ```
  {

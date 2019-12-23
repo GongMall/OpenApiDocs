@@ -41,3 +41,7 @@
 * [交易退款回调](shou-dan/jiao-yi-tui-kuan-hui-diao.md)
 * [交易查询](shou-dan/jiao-yi-cha-xun.md)
 
+## 批量发薪
+
+* [上传工资单明细](pi-liang-fa-xin/shang-chuan-gong-zi-dan-ming-xi.md)
+
