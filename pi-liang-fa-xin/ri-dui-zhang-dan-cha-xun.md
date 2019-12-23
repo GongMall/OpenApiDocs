@@ -53,7 +53,29 @@ batchStatementList字段明细
 
 ```json
 {
-    "success": true
+    "success": true,
+    "data": {
+        "billDate": "2019-12-23",
+        "batchCount": 3,
+        "payeeCount": 5,
+        "batchStatementList": [{
+            "batchNum": "12231832",
+            "payeeCount": 1
+            "payDate": "2019-12-23 18:47:49",
+            "corporatePaymentAmount": "1.12",
+            "taxAmount": "0.00",
+            "addTaxAmount": "0.00",
+            "addValueTaxAmount": "0.00",
+            "manageFeeAmount": "0.01",
+            "actuallyPaidInAmount": "1.11"
+        }],
+        "corporatePaymentAmount": "0",
+        "taxAmount": "0",
+        "addTaxAmount": "0",
+        "addValueTaxAmount": "0",
+        "manageFeeAmount": "0",
+        "actuallyPaidInAmount": "0"
+    }
 }
 ```
 
