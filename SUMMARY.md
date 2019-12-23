@@ -43,5 +43,8 @@
 
 ## 批量发薪
 
-* [上传工资单明细](pi-liang-fa-xin/shang-chuan-gong-zi-dan-ming-xi.md)
+* [上传发薪数据明细](pi-liang-fa-xin/shang-chuan-gong-zi-dan-ming-xi.md)
+* [获取提交付款请求验证码](pi-liang-fa-xin/huo-qu-ti-jiao-fu-kuan-qing-qiu-yan-zheng-ma.md)
+* [提交付款请求](pi-liang-fa-xin/yi-jian-qun-fa-xin-jie-kou.md)
+* [取消付款单](pi-liang-fa-xin/qu-xiao-fu-kuan-dan.md)
 

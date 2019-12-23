@@ -31,34 +31,34 @@
 
 detailList具体发薪数据参数
 
-| 参数名 | 必选 | 类型 | 说明 |
-| :--- | :--- | :--- | --- |
-| customerOrderNum | 是 | integer | 序列号\(批次内唯一\) |
-| idNumber | 是 | string | 身份证 |
-| name | 是 | string | 姓名 |
-| mobile | 是 | string | 手机 |
-| salaryAccount | 是 | string | 发薪账号 |
-| salaryAmount | 是 | string | 发薪金额\(大于0.1\) |
-| salaryType | 是 | string | 发薪类型\(默认是0，银行卡\) |
-| incomeStatement | 是 | string | 备注 |
+| 参数名 | 类型 | 说明 |
+| :--- | :--- | --- |
+| customerOrderNum | integer | 序列号\(批次内唯一\) |
+| idNumber | string | 身份证 |
+| name | string | 姓名 |
+| mobile | string | 手机 |
+| salaryAccount | string | 发薪账号 |
+| salaryAmount | string | 发薪金额\(大于0.1\) |
+| salaryType | string | 发薪类型\(默认是0，银行卡\) |
+| incomeStatement | string | 备注 |
 
 **请求参数bizContent的格式示例**
 
 ```json
 {
-	"batchNum": "0000000000",
-	"verifyContract": 0,
-	"detailList": [{
-		"idNumber": "411421199202264840",
-		"incomeStatement": "发薪",
-		"mobile": "15280191063",
-		"name": "郝琳",
-		"salaryAccount": "6235756400000604185",
-		"salaryAmount": "0.1",
-		"salaryType": "0",
-		"customerOrderNum": 1
-	}],
-	"month": "2019-18"
+    "batchNum": "0000000000",
+    "verifyContract": 0,
+    "detailList": [{
+        "idNumber": "411421199202264840",
+        "incomeStatement": "发薪",
+        "mobile": "15280191063",
+        "name": "郝琳",
+        "salaryAccount": "6235756400000604185",
+        "salaryAmount": "0.1",
+        "salaryType": "0",
+        "customerOrderNum": 1
+    }],
+    "month": "2019-18"
 }
 ```
 
