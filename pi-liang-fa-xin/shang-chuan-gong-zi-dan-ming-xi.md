@@ -26,7 +26,6 @@
 | :--- | :--- | :--- | :--- |
 | batchNum | 是 | string | 批次号\(唯一\) |
 | verifyContract | 是 | integer | 是否电签\(0:不电签，1:电签\) |
-| month | 是 | string | 当前月份\(格式：yyyy-MM\) |
 | detailList | 是 | json数组 | 具体发薪数据 |
 
 detailList具体发薪数据参数
