@@ -62,7 +62,7 @@ failDetail字段明细
 | 参数名 | 类型 | 说明 |
 | :--- | :--- | :--- |
 | customerOrderNum | string | 商户明细序号 |
-| name | integer | 员工姓名 |
+| name | string | 员工姓名 |
 | idNumber | string | 身份证号 |
 | mobile | string | 手机号 |
 | salaryAccount | string | 收款帐号 |
@@ -79,33 +79,34 @@ failDetail字段明细
 
 ```json
 {
-    "bizContent": {
-        "batchNum": "20191223",
-        "totalNum": 3,
-        "taxCount": 3,
+    "success": true,
+    "data": {
+        "batchNum": "12231832",
+        "totalNum": 1,
+        "taxCount": 1,
         "canPay": 0,
         "taxCalculationDate": "2019-12-23",
         "failureTime": "2019-12-31",
-        "actuallyPaidInAmount": 0,
-        "taxAmount": 0,
-        "addValueTaxAmount": 0,
-        "addTaxAmount": 0,
-        "manageFeeAmount": 0,
-        "corporatePaymentAmount": 0,
+        "actuallyPaidInAmount": "1.11",
+        "taxAmount": "0.00",
+        "addValueTaxAmount": "0.00",
+        "addTaxAmount": "0.00",
+        "manageFeeAmount": "0.01",
+        "corporatePaymentAmount": "1.12",
         "taxDetail": [{
-            "customerOrderNum": "003",
-            "name": "周勇",
-            "idNumber": "340826199511301419",
-            "mobile": "15656597221",
-            "salaryAccount": "6214835907152068",
-            "salaryAmount": 0.25,
-            "monthRealWageSum": 27.95,
-            "corporatePaymentAmount": 0.25,
-            "taxAmount": 0.00,
-            "addTaxAmount": 0.00,
-            "addValueTaxAmount": 0.00,
-            "manageFeeAmount": 0.00,
-            "actuallyPaidInAmount": 0.25
+            "monthRealWageSum": "44.21",
+            "corporatePaymentAmount": "1.12",
+            "taxAmount": "0.00",
+            "addTaxAmount": "0.00",
+            "addValueTaxAmount": "0.00",
+            "manageFeeAmount": "0.01",
+            "actuallyPaidInAmount": "1.11",
+            "customerOrderNum": "001",
+            "name": "纪玲",
+            "idNumber": "420322199312037229",
+            "mobile": "17557285044",
+            "salaryAccount": "6214835892461078",
+            "salaryAmount": "1.11"
         }],
         "failDetail": []
     }
@@ -113,8 +114,4 @@ failDetail字段明细
 ```
 
 **备注**
-
-
-
-
 

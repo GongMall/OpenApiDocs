@@ -26,14 +26,14 @@
 | :--- | :--- | :--- | :--- |
 | batchNum | 是 | string | 批次号\(唯一\) |
 | verifyContract | 是 | integer | 是否电签\(0:不电签，1:电签\) |
-| month | 是 | string | 月份\(格式：yyyy-MM\)；例如：12月20日调用该接口发放薪资，此处填2019-12 |
+| month | 是 | string | 当前月份\(格式：yyyy-MM\) |
 | detailList | 是 | json数组 | 具体发薪数据 |
 
 detailList具体发薪数据参数
 
 | 参数名 | 类型 | 说明 |
 | :--- | :--- | --- |
-| customerOrderNum | integer | 序列号\(批次内唯一\) |
+| customerOrderNum | string | 序列号\(批次内唯一\) |
 | idNumber | string | 身份证 |
 | name | string | 姓名 |
 | mobile | string | 手机，11位数字 |
