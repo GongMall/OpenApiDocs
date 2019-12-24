@@ -4,7 +4,7 @@
 
 **简要描述：**
 
-* 接入方上传工资单发薪数据明细
+* 贵司调用该接口，上传工资单发薪数据明细。同一批次`相同身份证号`，发薪数据受理后，我司会进行合并算税，并回调结果。
 
 **请求URL：**
 
@@ -23,10 +23,10 @@
 **业务参数bizContent格式：**
 
 | 参数名 | 必选 | 类型 | 说明 |
-| :--- | :--- | :--- | --- |
+| :--- | :--- | :--- | :--- |
 | batchNum | 是 | string | 批次号\(唯一\) |
 | verifyContract | 是 | integer | 是否电签\(0:不电签，1:电签\) |
-| month | 是 | string | 月份\(格式：yyyy-MM\) |
+| month | 是 | string | 月份\(格式：yyyy-MM\)；例如：12月20日调用该接口发放薪资，此处填2019-12 |
 | detailList | 是 | json数组 | 具体发薪数据 |
 
 detailList具体发薪数据参数
@@ -36,9 +36,9 @@ detailList具体发薪数据参数
 | customerOrderNum | integer | 序列号\(批次内唯一\) |
 | idNumber | string | 身份证 |
 | name | string | 姓名 |
-| mobile | string | 手机 |
+| mobile | string | 手机，11位数字 |
 | salaryAccount | string | 发薪账号 |
-| salaryAmount | string | 发薪金额\(大于0.1\) |
+| salaryAmount | string | 发薪金额\(大于0.1\)；小数点后两位，超出会造成格式校验失败。 |
 | salaryType | string | 发薪类型\(默认是0，银行卡\) |
 | incomeStatement | string | 备注 |
 
