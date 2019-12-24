@@ -20,8 +20,9 @@
 | :--- | :--- | :--- | --- |
 | batchNum | 是 | string | 批次号\(唯一\) |
 | captcha | 是 | string | 短信验证码 |
-| corporatePaymentAmount | 是 | string | 发薪总金额 |
-| payCount | 是 | integer | 发薪总笔数 |
+| corporatePaymentAmount | 是 | string | 企业支出金额 |
+| actuallyPaidInAmount | 是 | string | 个人实际到账金额 |
+| payCount | 是 | integer | 支付明细条数 |
 
 **返回参数说明：**
 

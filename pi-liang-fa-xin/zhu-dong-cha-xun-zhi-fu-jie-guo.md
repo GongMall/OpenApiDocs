@@ -25,7 +25,7 @@
 | 参数名 | 类型 | 说明 |
 | :--- | :--- | --- |
 | batchNum | string | 批次号 |
-| payStatus | integer | 支付状态 |
+| payStatus | integer | 支付状态\(-2:已撤销，5:计算税费中，0:待付款，1:付款中，2:付款完成\) |
 | paySuccessDetails | json数组 | 付款成功集合 |
 | payFailDetails | json数组 | 付款失败集合 |
 
@@ -52,7 +52,7 @@ failDetail字段明细
 | 参数名 | 类型 | 说明 |
 | :--- | :--- | :--- |
 | customerOrderNum | string | 商户明细序号 |
-| name | integer | 员工姓名 |
+| name | string | 员工姓名 |
 | idNumber | string | 身份证号 |
 | mobile | string | 手机号 |
 | salaryAccount | string | 收款帐号 |
@@ -63,28 +63,28 @@ failDetail字段明细
 
 ```json
 {
-    "success": true,
-    "data": {
-        "batchNum": "12231832",
-        "companyId": 120,
-        "payStatus": 2,
-        "paySuccessDetails": [{
-            "customerOrderNum": "001",
-            "name": "纪玲",
-            "idNumber": "420322199312037229",
-            "mobile": "17557285044",
-            "salaryAccount": "6214835892461078",
-            "salaryAmount": 1.11,
-            "corporatePaymentAmount": 1.12,
-            "taxAmount": 0.00,
-            "addTaxAmount": 0.00,
-            "addValueTaxAmount": 0.00,
-            "manageFeeAmount": 0.01,
-            "actuallyPaidInAmount": 1.11,
-            "payDate": "2019-12-23"
-        }],
-        "payFailDetails": []
-    }
+	"success": true,
+	"data": {
+		"batchNum": "12231832",
+		"companyId": 120,
+		"payStatus": 2,
+		"paySuccessDetails": [{
+			"customerOrderNum": "001",
+			"name": "纪玲",
+			"idNumber": "420322199312037229",
+			"mobile": "17557285044",
+			"salaryAccount": "6214835892461078",
+			"salaryAmount": 1.11,
+			"corporatePaymentAmount": 1.12,
+			"taxAmount": 0.00,
+			"addTaxAmount": 0.00,
+			"addValueTaxAmount": 0.00,
+			"manageFeeAmount": 0.01,
+			"actuallyPaidInAmount": 1.11,
+			"payDate": "2019-12-23T10:47:50Z"
+		}],
+		"payFailDetails": []
+	}
 }
 ```
 

@@ -39,7 +39,7 @@ batchStatementList字段明细
 
 | 参数名 | 类型 | 说明 |
 | :--- | :--- | :--- |
-| batchNum | string | 日期\(格式：yyyy-MM-dd\) |
+| batchNum | string | 批次号 |
 | payeeCount | integer | 收款人次 |
 | payDate | string | 支付时间 |
 | corporatePaymentAmount | string | 企业支出金额 |
