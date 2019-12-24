@@ -65,23 +65,22 @@ failDetail字段明细
 {
 	"success": true,
 	"data": {
-		"batchNum": "12231832",
-		"companyId": 120,
+		"batchNum": "12241540",
 		"payStatus": 2,
 		"paySuccessDetails": [{
-			"customerOrderNum": "001",
+			"customerOrderNum": "12-2401",
 			"name": "纪玲",
 			"idNumber": "420322199312037229",
 			"mobile": "17557285044",
 			"salaryAccount": "6214835892461078",
-			"salaryAmount": 1.11,
-			"corporatePaymentAmount": 1.12,
-			"taxAmount": 0.00,
-			"addTaxAmount": 0.00,
-			"addValueTaxAmount": 0.00,
-			"manageFeeAmount": 0.01,
-			"actuallyPaidInAmount": 1.11,
-			"payDate": "2019-12-23T10:47:50Z"
+			"salaryAmount": 8.88,
+			"corporatePaymentAmount": 8.97,
+			"taxAmount": 0.53,
+			"addTaxAmount": 0.02,
+			"addValueTaxAmount": 1.06,
+			"manageFeeAmount": 0.09,
+			"actuallyPaidInAmount": 7.27,
+			"payDate": "2019-12-24 16:04:51"
 		}],
 		"payFailDetails": []
 	}

@@ -69,26 +69,27 @@ failDetail字段明细
 
 ```json
 {
- "bizContent": {
-  "batchNum": "201912231455",
-  "payStatus": 2,
-  "paySuccessDetails": [{
-   "customerOrderNum": "003",
-   "name": "周勇",
-   "idNumber": "340826199511301419",
-   "mobile": "15656597221",
-   "salaryAccount": "6214835907152068",
-   "salaryAmount": 0.30,
-   "corporatePaymentAmount": 0.30,
-   "taxAmount": 0.00,
-   "addTaxAmount": 0.00,
-   "addValueTaxAmount": 0.00,
-   "manageFeeAmount": 0.00,
-   "actuallyPaidInAmount": 0.30,
-   "payDate": "2019-12-23T07:07:11Z"
-  }],
-  "payFailDetails": []
- }
+	"success": true,
+	"data": {
+		"batchNum": "12241540",
+		"payStatus": 2,
+		"paySuccessDetails": [{
+			"customerOrderNum": "12-2401",
+			"name": "纪玲",
+			"idNumber": "420322199312037229",
+			"mobile": "17557285044",
+			"salaryAccount": "6214835892461078",
+			"salaryAmount": 8.88,
+			"corporatePaymentAmount": 8.97,
+			"taxAmount": 0.53,
+			"addTaxAmount": 0.02,
+			"addValueTaxAmount": 1.06,
+			"manageFeeAmount": 0.09,
+			"actuallyPaidInAmount": 7.27,
+			"payDate": "2019-12-24 16:04:51"
+		}],
+		"payFailDetails": []
+	}
 }
 ```
 
