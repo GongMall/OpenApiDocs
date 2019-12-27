@@ -43,13 +43,14 @@
 
 ## 批量发薪
 
-* [上传发薪数据明细](pi-liang-fa-xin/shang-chuan-gong-zi-dan-ming-xi.md)
-* [获取提交付款请求验证码](pi-liang-fa-xin/huo-qu-ti-jiao-fu-kuan-qing-qiu-yan-zheng-ma.md)
-* [提交付款请求](pi-liang-fa-xin/yi-jian-qun-fa-xin-jie-kou.md)
-* [取消付款单](pi-liang-fa-xin/qu-xiao-fu-kuan-dan.md)
+* [批量发薪交互时序](pi-liang-fa-xin-jiao-hu-shi-xu.md)
+* [批量上传工资单](pi-liang-fa-xin/shang-chuan-gong-zi-dan-ming-xi.md)
+* [获取支付验证码](pi-liang-fa-xin/huo-qu-ti-jiao-fu-kuan-qing-qiu-yan-zheng-ma.md)
+* [支付](pi-liang-fa-xin/yi-jian-qun-fa-xin-jie-kou.md)
+* [取消发薪](pi-liang-fa-xin/qu-xiao-fu-kuan-dan.md)
 * [主动查询算税结果](pi-liang-fa-xin/zhu-dong-cha-xun-suan-shui-jie-guo.md)
 * [主动查询支付结果](pi-liang-fa-xin/zhu-dong-cha-xun-zhi-fu-jie-guo.md)
 * [日对账单查询](pi-liang-fa-xin/ri-dui-zhang-dan-cha-xun.md)
 * [算税结果回调](pi-liang-fa-xin/suan-shui-jie-guo-hui-diao.md)
-* [提交付款请求回调](pi-liang-fa-xin/ti-jiao-fu-kuan-qing-qiu-hui-diao.md)
+* [支付请求回调](pi-liang-fa-xin/ti-jiao-fu-kuan-qing-qiu-hui-diao.md)
 
