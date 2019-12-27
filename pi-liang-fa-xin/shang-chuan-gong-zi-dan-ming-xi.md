@@ -37,7 +37,7 @@ detailList具体发薪数据参数
 | idNumber | string | 身份证 |
 | name | string | 姓名 |
 | mobile | string | 手机，11位数字 |
-| salaryAccount | string | 发薪账号 |
+| salaryAccount | string | 发薪账号\(银行卡号或者支付宝帐号\)出款行选择网商银行时,可以填写支付宝帐号 |
 | salaryAmount | string | 发薪金额\(大于0.1\)；小数点后两位，超出会造成格式校验失败。 |
 | salaryType | string | 发薪类型\(默认是0，银行卡\) |
 | incomeStatement | string | 备注 |
