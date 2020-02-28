@@ -21,7 +21,7 @@
   5）回调用户电签状态（贵司需提供一个可用的回调地址）
 
 **流程图**  
-![](https://www.showdoc.cc/server/api/common/visitfile/sign/a0fc95ea644853e36509f939a0276234?showdoc=.jpg)
+![](https://wx2.sinaimg.cn/large/92540662ly1g9wrcoddp1j20l90pejs7.jpg)
 
 
 
@@ -29,7 +29,7 @@
 
 * 说明：用户选择（或者贵司系统默认）自愿签署协议。点击“获取验证码”，收到短信验证码后，填入验证码。点击“确认”即可发起电签。另，图中轮播图部分仅为示例，和电签内容无关。
 
-  ![](https://www.showdoc.cc/server/api/common/visitfile/sign/a5ccb56157a4b1d141d3e8b46df39a73?showdoc=.jpg)
+  ![](https://wx1.sinaimg.cn/large/92540662ly1gbvla2jxy9j20a30igwen.jpg)
 
 
 
