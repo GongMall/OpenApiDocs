@@ -21,7 +21,7 @@
 | name | 是 | String | 姓名 |
 | mobile | 是 | String | 手机号 |
 | identity | 是 | String | 证件号码（目前仅支持大陆身份证） |
-| captcha | 是 | String | 验证码 |
+| captcha | 否 | String | 验证码（已配置不需要意愿认证可不传，否则为必传） |
 | extraParam | 否 | String | 附言参数 |
 
 **返回示例**
